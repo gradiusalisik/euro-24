@@ -28,7 +28,7 @@ export const PrimaryButton = styled.button `
     cursor: not-allowed;
     box-shadow: none;
   }
-`
+`;
 
 export const SecondaryButton = styled(PrimaryButton)`
   background-color: #ffffff;

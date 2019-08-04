@@ -5,7 +5,7 @@ import { SecondaryButton } from "./Button.styled";
 import { TetriaryButton } from "./Button.styled";
 
 
-export const Button: React.FC = ({ children, disabled }) => (
+export const ButtonPrimary: React.FC = ({ children, disabled }) => (
   <PrimaryButton disabled={disabled}>{children}</PrimaryButton>
 );
 
