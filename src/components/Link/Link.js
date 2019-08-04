@@ -1,11 +1,11 @@
 import React from "react";
 
-import { MainLink, HeaderLink } from "./Link.styled";
+import { LinkStyled, HeaderLinkStyled } from "./Link.styled";
 
-export const Link: React.FC = ({ children }) => (
-  <MainLink>{children}</MainLink>
+export const Link = ({ children }) => (
+  <LinkStyled>{children}</LinkStyled>
 );
 
-export const HeaderMenuLink: React.FC = ({ children }) => (
-  <HeaderLink>{children}</HeaderLink>
+export const HeaderMenuLink = ({ children }) => (
+  <HeaderLinkStyled  as="button">{children}</HeaderLinkStyled >
 );

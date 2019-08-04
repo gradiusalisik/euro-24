@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 import { ButtonPrimary, ButtonSecondary, ButtonTetriary } from "./components/Button/Button";
 import { Link, HeaderMenuLink } from "./components/Link/Link";
+import { Tag, TagBlue } from "./components/Tag/Tag";
+import { Tab, TabBlue } from "./components/Tab/Tab";
 
 const AppStyled = styled.div`
 `;
@@ -17,8 +19,12 @@ export default class App extends React.Component {
         <ButtonSecondary disabled>Перезвонить?</ButtonSecondary>
         <ButtonTetriary>Перезвонить?</ButtonTetriary>
         <ButtonTetriary disabled>Перезвонить?</ButtonTetriary>
-        <Link>info@master-pvx.ru</Link>
+        <Link href="/">info@master-pvx.ru</Link>
         <HeaderMenuLink>Окна</HeaderMenuLink>
+        <Tag>Премиальные</Tag>
+        <TagBlue>Премиальные</TagBlue>
+        <Tab>Рольставни</Tab>
+        <TabBlue>Рольставни</TabBlue>
       </AppStyled>
     );
   }

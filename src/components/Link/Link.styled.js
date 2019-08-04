@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-export const MainLink = styled.a `
-  font-family: "OpenSans", sans-serif;
-  /* TODO подключить этот шрифт! */
+export const LinkStyled = styled.a `
   font-size: 16px;
   color: #3985ec;
   cursor: pointer;
@@ -14,20 +12,22 @@ export const MainLink = styled.a `
   }
 `;
 
-export const HeaderLink = styled(MainLink) `
+export const HeaderLinkStyled = styled(LinkStyled) `
   position: relative;
   color: #323c48;
+  background: none;
+  border: none;
 
   &:hover {
     color: #7822f8;
   }
 
   &:active:before {
-    content: '';
     position: absolute;
+    bottom: -8px;
     width: 100%;
     height: 2px;
-    bottom: -8px;
+    content: '';
     color: #8f03fd;
     border-bottom: 2px solid #7822f8;
   }
