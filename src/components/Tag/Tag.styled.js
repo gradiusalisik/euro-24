@@ -16,8 +16,7 @@ export const TagStyled = styled.button `
   &:hover {
     color: #3985ec;
     border: solid 1px #3985ec;
-  }
-`;
+}`;
 
 export const TagBlueStyled = styled(TagStyled) `
   border: none;

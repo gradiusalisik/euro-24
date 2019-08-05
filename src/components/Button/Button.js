@@ -1,18 +1,15 @@
 import React from "react";
 
-import { PrimaryButton } from "./Button.styled";
-import { SecondaryButton } from "./Button.styled";
-import { TetriaryButton } from "./Button.styled";
-
+import { PrimaryButtonStyled, SecondaryButtonStyled, TetriaryButtonStyled } from "./Button.styled";
 
 export const ButtonPrimary = ({ children, disabled }) => (
-  <PrimaryButton disabled={disabled}>{children}</PrimaryButton>
+  <PrimaryButtonStyled disabled={disabled}>{children}</PrimaryButtonStyled>
 );
 
 export const ButtonSecondary = ({ children, disabled }) => (
-  <SecondaryButton disabled={disabled}>{children}</SecondaryButton>
+  <SecondaryButtonStyled disabled={disabled}>{children}</SecondaryButtonStyled>
 );
 
 export const ButtonTetriary = ({ children, disabled }) => (
-  <TetriaryButton disabled={disabled}>{children}</TetriaryButton>
+  <TetriaryButtonStyled disabled={disabled}>{children}</TetriaryButtonStyled>
 );

@@ -7,5 +7,5 @@ export const Link = ({ children }) => (
 );
 
 export const HeaderMenuLink = ({ children }) => (
-  <HeaderLinkStyled  as="button">{children}</HeaderLinkStyled >
+  <HeaderLinkStyled  as="button">{children}</HeaderLinkStyled>
 );

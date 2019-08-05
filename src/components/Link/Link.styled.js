@@ -18,7 +18,8 @@ export const HeaderLinkStyled = styled(LinkStyled) `
   background: none;
   border: none;
 
-  &:hover {
+  &:hover,
+  &:active {
     color: #7822f8;
   }
 
