@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/euro-24/static/css/main.a55a8b62.chunk.css",
-    "main.js": "/euro-24/static/js/main.17c866f9.chunk.js",
-    "main.js.map": "/euro-24/static/js/main.17c866f9.chunk.js.map",
+    "main.css": "/euro-24/static/css/main.7f46fc4f.chunk.css",
+    "main.js": "/euro-24/static/js/main.1b660e38.chunk.js",
+    "main.js.map": "/euro-24/static/js/main.1b660e38.chunk.js.map",
     "runtime~main.js": "/euro-24/static/js/runtime~main.af0c163b.js",
     "runtime~main.js.map": "/euro-24/static/js/runtime~main.af0c163b.js.map",
-    "static/js/2.4113882a.chunk.js": "/euro-24/static/js/2.4113882a.chunk.js",
-    "static/js/2.4113882a.chunk.js.map": "/euro-24/static/js/2.4113882a.chunk.js.map",
+    "static/js/2.8a6ef672.chunk.js": "/euro-24/static/js/2.8a6ef672.chunk.js",
+    "static/js/2.8a6ef672.chunk.js.map": "/euro-24/static/js/2.8a6ef672.chunk.js.map",
     "index.html": "/euro-24/index.html",
-    "precache-manifest.96e745a65a9c052697d56732351fc11d.js": "/euro-24/precache-manifest.96e745a65a9c052697d56732351fc11d.js",
+    "precache-manifest.3afa8dd2dce4e3cc8606ab7096af2b35.js": "/euro-24/precache-manifest.3afa8dd2dce4e3cc8606ab7096af2b35.js",
     "service-worker.js": "/euro-24/service-worker.js",
-    "static/css/main.a55a8b62.chunk.css.map": "/euro-24/static/css/main.a55a8b62.chunk.css.map",
+    "static/css/main.7f46fc4f.chunk.css.map": "/euro-24/static/css/main.7f46fc4f.chunk.css.map",
+    "static/media/illustration-greeting.svg": "/euro-24/static/media/illustration-greeting.7d347823.svg",
+    "static/media/logo-kbe.svg": "/euro-24/static/media/logo-kbe.066d36ae.svg",
+    "static/media/logo-rehau.svg": "/euro-24/static/media/logo-rehau.caf84ab8.svg",
+    "static/media/logo-salamander.svg": "/euro-24/static/media/logo-salamander.1c8cba2a.svg",
+    "static/media/logo-schuco.svg": "/euro-24/static/media/logo-schuco.8497ada6.svg",
+    "static/media/logo-trocal.svg": "/euro-24/static/media/logo-trocal.058e8083.svg",
+    "static/media/logo-veka.svg": "/euro-24/static/media/logo-veka.12eb9a9c.svg",
     "static/media/font.css": "/euro-24/static/media/roboto-regular.e31f8a49.woff2"
   }
 }
