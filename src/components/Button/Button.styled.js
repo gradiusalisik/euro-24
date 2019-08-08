@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Button = styled.button `
+  padding: 12px 24px;
   display: inline-block;
   max-width: 155px;
   width: 100%;
