@@ -4,6 +4,7 @@ import { Element } from "react-scroll";
 
 import Header from "./components/Header/Header";
 import FirstScreen from "./components/FirstScreen/FirstScreen";
+import SliderStocks from "./components/SliderStocks/SliderStocks";
 
 import { AppStyled, HeaderScroll } from "./App.styled.js";
 
@@ -40,7 +41,9 @@ const App = () => {
       <Element name="repair">repair</Element>
       <Element name="balconies">balconies</Element>
       <Element name="services">services</Element>
-      <Element name="stocks">stocks</Element>
+      <Element name="stocks">
+        <SliderStocks />
+      </Element>
       <Element name="portfolio">portfolio</Element>
       <Element name="reviews">reviews</Element>
     </AppStyled>

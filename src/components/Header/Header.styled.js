@@ -16,7 +16,7 @@ export const HeaderStyled = styled.header`
       left: 0;
       right: 0;
       box-shadow: 0 4px 8px 0 rgba(50, 60, 72, 0.15);
-      border-bottom: px solid ${colors.whiteBlue};
+      border-bottom: 1px solid ${colors.whiteBlue};
       background-color: ${colors.white};
       transform: translateY(-100%);
       transition: transform ease-out 0.3s;
