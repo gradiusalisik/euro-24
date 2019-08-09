@@ -1,82 +1,93 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
+import { colors } from "../../variables";
 
-export const Button = styled.button `
-  padding: 12px 24px;
-  display: inline-block;
-  max-width: 155px;
-  width: 100%;
+const ButtonBase = css`
+  padding-left: 24px;
+  padding-right: 24px;
+  display: inline-flex;
+  justify-content: center;
   height: 40px;
   font-size: 16px;
   border-radius: 2px;
-`;
-
-export const PrimaryButtonStyled = styled(Button)`
-  color: #ffffff;
-  background-color: #3985ec;
-  border: none;
-  box-shadow: 0 4px 8px 0 rgba(86, 149, 237, 0.15);
-  transition: background-color .3s;
-
-  &:hover {
-    background-color: #116fff;
-  }
-
-  &:active {
-    background-color: #0165ff;
-  }
+  white-space: nowrap;
 
   &:disabled {
-    background-color: #b0cff8;
     pointer-events: none;
     cursor: not-allowed;
-    box-shadow: none;
   }
 `;
 
-export const SecondaryButtonStyled = styled(Button)`
-  color: #ef7c2b;
-  background-color: #ffffff;
-  border: 1px solid #eb6a21;
-  transition: background-color .3s, color .3s, border-color .3s;
+const buttonTheme = {
+  primary: css`
+    color: ${colors.white};
+    background-color: ${colors.brightblue};
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(86, 149, 237, 0.15);
+    transition: background-color .3s;
 
-  &:hover,
-  &:active {
-    color: #fff;
-    background-color: #fcb258;
-    border-color: transparent;
+    &:hover {
+      background-color: ${colors.vividBlue};
+    }
+
+    &:active {
+      background-color: ${colors.vividBlueTwo};
+    }
+
+    &:disabled {
+      background-color: ${colors.softBlue};
+      box-shadow: none;
+    }
+  `,
+  secondary: css`
+    color: ${colors.orange};
+    background-color: ${colors.white};
+    border: 1px solid ${colors.vividOrange};
+    transition: background-color .3s, color .3s, border-color .3s;
+
+    &:hover,
+    &:active {
+      color: ${colors.white};
+      border-color: transparent;
+      box-shadow: 0 4px 8px 0 rgba(230, 120, 44, 0.15);
+    }
+
+    &:hover {
+      background-color: ${colors.softOrange};
+    }
+
+    &:active {
+      background-color: ${colors.vividOrangeTwo};
+    }
+
+    &:disabled {
+      color: ${colors.softOrangeTwo};
+      background-color: ${colors.white};
+      border-color: ${colors.softOrangeThree};
+    }
+  `,
+  tetriary: css`
+    color: ${colors.white};
+    background-color: ${colors.softOrange};
+    border: none;
     box-shadow: 0 4px 8px 0 rgba(230, 120, 44, 0.15);
-  }
+    transition: background-color .3s;
 
-  &:active {
-    background-color: #ffa231;
-  }
+    &:hover {
+      background-color: ${colors.vividOrangeTwo};
+    }
 
-  &:disabled {
-    color: #f9cbab;
-    pointer-events: none;
-    cursor: not-allowed;
-    background-color: #ffffff;
-    border-color: #f7c4a7;
-  }
-`;
+    &:active {
+      background-color: ${colors.vividOrangeThree};
+    }
 
-export const TetriaryButtonStyled = styled(Button)`
-  color: #fff;
-  background-color: #fcb258;
-  border: none;
-  box-shadow: 0 4px 8px 0 rgba(230, 120, 44, 0.15);
-  transition: background-color .3s;
+    &:disabled {
+      background-color: ${colors.softOrangeFour};
+      box-shadow: none;
+    }
+  `
+}
 
-  &:hover {
-    background-color: #ffa231;
-  }
-
-  &:active {
-    background-color: #fb9923;
-  }
-
-  &:disabled {
-    background-color: #fee1bd;
-    box-shadow: none;
-  }
+export const ButtonStyled = styled.button `
+  ${ButtonBase};
+  ${p => buttonTheme[p.theme]}
 `;

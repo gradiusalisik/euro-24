@@ -6,10 +6,8 @@ import Header from "./components/Header/Header";
 import FirstScreen from "./components/FirstScreen/FirstScreen";
 
 // TODO Delete ME later
-import { ButtonPrimary, ButtonSecondary, ButtonTetriary } from "./components/Button/Button";
 import { Tag, TagBlue } from "./components/Tag/Tag";
 import { Tab, TabBlue } from "./components/Tab/Tab";
-
 
 import { AppStyled, HeaderScroll } from "./App.styled.js";
 
@@ -49,12 +47,6 @@ const App = () => {
       <Element name="stocks">stocks</Element>
       <Element name="portfolio">portfolio</Element>
       <Element name="reviews">reviews</Element>
-      <ButtonPrimary>Перезвонить?</ButtonPrimary>
-      <ButtonPrimary disabled>Перезвонить?</ButtonPrimary>
-      <ButtonSecondary>Перезвонить?</ButtonSecondary>
-      <ButtonSecondary disabled>Перезвонить?</ButtonSecondary>
-      <ButtonTetriary>Перезвонить?</ButtonTetriary>
-      <ButtonTetriary disabled>Перезвонить?</ButtonTetriary>
       <Tag>Премиальные</Tag>
       <TagBlue>Премиальные</TagBlue>
       <Tab>Рольставни</Tab>

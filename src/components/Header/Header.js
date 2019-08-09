@@ -1,7 +1,7 @@
 import React from "react";
 import { PropTypes as pt } from "prop-types";
 import Menu from "../Menu/Menu";
-import { ButtonPrimary} from "../Button/Button";
+import Button from "../Button/Button";
 
 // data
 import { menu } from "../../assets/dataJson/menu";
@@ -28,7 +28,7 @@ const Header = ({ isScroll, className }) => (
         <Mail href="mailto:info@master-pvx.ru">info@master-pvx.ru</Mail>
         <Phone href="tel:74952150168">+7 (495) 215-01-68</Phone>
       </Contacts>
-      <ButtonPrimary>Перезвонить</ButtonPrimary>
+      <Button>Перезвонить</Button>
     </Right>
   </HeaderStyled>
 );

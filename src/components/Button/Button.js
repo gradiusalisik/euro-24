@@ -1,15 +1,20 @@
 import React from "react";
+import { PropTypes as pt } from "prop-types";
+import { ButtonStyled } from "./Button.styled";
 
-import { PrimaryButtonStyled, SecondaryButtonStyled, TetriaryButtonStyled } from "./Button.styled";
-
-export const ButtonPrimary = ({ children, disabled }) => (
-  <PrimaryButtonStyled disabled={disabled}>{children}</PrimaryButtonStyled>
+const Button = ({ children, disabled, type, theme, onClick }) => (
+  <ButtonStyled disabled={disabled} theme={theme} type={type} onClick={onClick}>{children}</ButtonStyled>
 );
 
-export const ButtonSecondary = ({ children, disabled }) => (
-  <SecondaryButtonStyled disabled={disabled}>{children}</SecondaryButtonStyled>
-);
+Button.propTypes = {
+  theme: "primary" || "secondary" || "tetriary",
+  type: pt.string,
+  onClick: pt.func
+};
 
-export const ButtonTetriary = ({ children, disabled }) => (
-  <TetriaryButtonStyled disabled={disabled}>{children}</TetriaryButtonStyled>
-);
+Button.defaultProps = {
+  theme: "primary",
+  type: "button"
+};
+
+export default Button;

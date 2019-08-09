@@ -1,32 +1,35 @@
 import styled from 'styled-components';
+import { colors } from "../../variables";
 
 export const TagStyled = styled.button `
-  padding: 4px 15px;
-  /* TODO что не так с отступами? */
-  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   height: 30px;
   font-size: 14px;
   white-space: nowrap;
   color: #7e8fa4;
   border-radius: 20px;
-  background-color: #ffffff;
+  background-color: ${colors.white};
   border: solid 1px #7e8fa4;
   transition: border .3s, color .3s;
 
   &:hover {
-    color: #3985ec;
-    border: solid 1px #3985ec;
+    color: ${colors.brightblue};
+    border: solid 1px ${colors.brightblue};
 }`;
 
 export const TagBlueStyled = styled(TagStyled) `
   border: none;
-  color: #fff;
-  background-color: #3985ec;
+  color: ${colors.white};
+  background-color: ${colors.brightblue};
   transition: background-color .3s;
 
   &:hover {
-    color: #fff;
-    background-color: #116fff;
+    color: ${colors.white};
+    background-color: ${colors.vividBlue};
     border: none;
   }
 `;

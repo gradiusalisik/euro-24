@@ -1,5 +1,5 @@
 import React from "react";
-import { ButtonPrimary, ButtonSecondary} from "../Button/Button";
+import Button from "../Button/Button";
 
 // data
 import { firstScreen } from "../../assets/dataJson/firstScreen";
@@ -26,8 +26,8 @@ const FirstScreen = () => (
         <Title dangerouslySetInnerHTML={{ __html: title }} />
         <Description>{description}</Description>
         <Buttons>
-          <ButtonPrimary>Подобрать для себя</ButtonPrimary>
-          <ButtonSecondary>Задать вопрос</ButtonSecondary>
+          <Button>Подобрать для себя</Button>
+          <Button theme="secondary">Задать вопрос</Button>
         </Buttons>
       </Left>
       <Image src={image} alt="repairs" />
