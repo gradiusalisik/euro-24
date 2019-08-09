@@ -1,10 +1,12 @@
 import styled from "styled-components";
 import { colors } from "../../variables";
 import SliderReviews from "../SliderReviews/SliderReviews";
+import SliderButton from "../SliderButton/SliderButton";
 
 import ReviewIllustration from "../../assets/img/reviews/illustration-reviews.svg";
 
 export const ReviewsStyled = styled.div`
+  position: relative;
   /* TODO временный костыль на высоту */
   height: 540px;
   display: flex;
@@ -46,4 +48,9 @@ export const Title = styled.h2`
 
 export const SliderReviewsStyled = styled(SliderReviews)`
   width: calc(100% - 566px);
+`;
+
+export const SliderButtonStyled = styled(SliderButton)`
+  top: -100px;
+  transform: translateY(0);
 `;

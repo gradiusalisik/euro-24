@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Button from "../Button/Button";
 
 import {
@@ -6,21 +6,37 @@ import {
   Info,
   Title,
   Wrap,
+  SliderButtonStyled,
   SliderReviewsStyled
 } from "./Reviews.styled";
 
-const Reviews = () => (
-  <ReviewsStyled>
-    <Info>
-      <Wrap>
-        <Title>
-          Мы трудимся <br /> для вас.
-        </Title>
-        <Button>Оставить отзыв</Button>
-      </Wrap>
-    </Info>
-    <SliderReviewsStyled />
-  </ReviewsStyled>
-);
+const Reviews = () => {
+  const sliderEl = useRef(null);
+
+  const handleClickPrev = () => {
+    sliderEl.current.slickPrev();
+  };
+  const handleClickNext = () => {
+    sliderEl.current.slickNext();
+  };
+
+  return (
+    <ReviewsStyled>
+      <SliderButtonStyled
+        onClickNext={handleClickNext}
+        onClickPrev={handleClickPrev}
+      />
+      <Info>
+        <Wrap>
+          <Title>
+            Мы трудимся <br /> для вас.
+          </Title>
+          <Button>Оставить отзыв</Button>
+        </Wrap>
+      </Info>
+      <SliderReviewsStyled />
+    </ReviewsStyled>
+  );
+};
 
 export default Reviews;

@@ -3,6 +3,7 @@ import { colors } from "../../variables";
 
 export const FirstScreenStyled = styled.div`
   padding-top: 90px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

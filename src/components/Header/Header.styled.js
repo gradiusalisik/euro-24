@@ -56,6 +56,11 @@ export const Phone = styled.a`
   text-decoration: none;
   text-align: right;
   color: ${colors.blue};
+  transition: color 0.3s;
+
+  &:hover {
+    color: ${colors.vividBlueTwo};
+  }
 `;
 
 export const Mail = styled(Phone)`

@@ -5,16 +5,15 @@ import { reviews } from "../../assets/dataJson/reviews";
 
 import { SliderReviewsStyled, CardReviewsStyled } from "./SliderReviews.styled";
 
-const SliderReviews = ({ className }) => {
+const SliderReviews = React.forwardRef(({ className }, ref) => {
   const settings = {
-    // centerMode: true,
     slidesToShow: 3,
-    speed: 700,
-    adaptiveHeight: true
+    arrows: false,
+    speed: 700
   };
 
   return (
-    <SliderReviewsStyled {...settings} className={className}>
+    <SliderReviewsStyled {...settings} className={className} ref={ref}>
       {reviews.map(item => (
         <CardReviewsStyled
           key={item.id}
@@ -26,6 +25,6 @@ const SliderReviews = ({ className }) => {
       ))}
     </SliderReviewsStyled>
   );
-};
+});
 
 export default SliderReviews;

@@ -1,6 +1,6 @@
 import ImageStocks from "../img/stocks/dom.jpg";
 
-export const stocks = [
+export const slides = [
   {
     id: "1",
     image: ImageStocks,
