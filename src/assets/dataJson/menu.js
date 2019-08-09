@@ -1,6 +1,6 @@
 export const menu = [
   {
-    id: "box",
+    id: "window",
     text: "Окна"
   },
   {

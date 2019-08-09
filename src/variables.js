@@ -13,5 +13,16 @@ export const colors = {
   purple: "#7822f8",
   purpleDark: "#8f03fd",
   orange: "#ef7c2b",
-  whiteBlue: "#c5cfde"
+  vividOrange: "#eb6a21",
+  vividOrangeTwo: "#ffa231",
+  vividOrangeThree: "#fb9923",
+  softOrange: "#fcb258",
+  softOrangeTwo: "#f9cbab",
+  softOrangeThree: "#f7c4a7",
+  softOrangeFour: "#fee1bd",
+  whiteBlue: "#c5cfde",
+  brightblue: "#3985ec",
+  vividBlue: "#116fff",
+  vividBlueTwo: "#0165ff",
+  softBlue: "#b0cff8"
 };

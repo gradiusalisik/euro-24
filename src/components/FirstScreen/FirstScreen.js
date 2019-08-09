@@ -27,7 +27,7 @@ const FirstScreen = () => (
         <Description>{description}</Description>
         <Buttons>
           <Button>Подобрать для себя</Button>
-          <Button>Задать вопрос</Button>
+          <Button theme="secondary">Задать вопрос</Button>
         </Buttons>
       </Info>
       <Image src={image} alt="repairs" />

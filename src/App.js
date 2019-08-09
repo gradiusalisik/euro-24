@@ -7,11 +7,18 @@ import FirstScreen from "./components/FirstScreen/FirstScreen";
 import SliderStocks from "./components/SliderStocks/SliderStocks";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Reviews from "./components/Reviews/Reviews";
+import Balconies from "./components/Balconies/Balconies";
+import Jalousie from "./components/Jalousie/Jalousie";
+import Cupboard from "./components/Cupboard/Cupboard";
+import Services from "./components/Services/Services";
+import Nets from "./components/Nets/Nets";
+import Window from "./components/Window/Window";
 
 import { AppStyled, HeaderScroll } from "./App.styled.js";
 
 const App = () => {
   const [isShowHeader, setShowHeader] = useState(false);
+
   const headerEl = useRef(null);
 
   useEffect(() => {
@@ -31,18 +38,26 @@ const App = () => {
   };
 
   return (
-    // TODO удалить гигантскую высоту, когда будут блоки
-    <AppStyled style={{ height: 5000 }}>
+    <AppStyled>
       <div ref={headerEl}>
         <Header />
       </div>
 
       <HeaderScroll isScroll isShowHeader={isShowHeader} />
       <FirstScreen />
-      <Element name="box">box</Element>
+      <Element name="window">
+        <Window />
+        <Jalousie />
+        <Nets />
+      </Element>
       <Element name="repair">repair</Element>
-      <Element name="balconies">balconies</Element>
-      <Element name="services">services</Element>
+      <Element name="balconies">
+        <Balconies />
+        <Cupboard />
+      </Element>
+      <Element name="services">
+        <Services />
+      </Element>
       <Element name="stocks">
         <SliderStocks />
       </Element>
