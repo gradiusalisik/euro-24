@@ -1,27 +1,55 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3bab4cfaa84b9c740bd97bd705cc897e",
+    "revision": "825798d1cf1b780d70a475c17519126f",
     "url": "/euro-24/index.html"
   },
   {
-    "revision": "416479952a7218aa2dcd",
-    "url": "/euro-24/static/css/main.7f46fc4f.chunk.css"
+    "revision": "5817a8fedf6985545d32",
+    "url": "/euro-24/static/css/main.528b90c6.chunk.css"
   },
   {
-    "revision": "23f3e708631511b16d75",
-    "url": "/euro-24/static/js/2.8a6ef672.chunk.js"
+    "revision": "201b3fc9a9d06d1c477b",
+    "url": "/euro-24/static/js/2.0421fb10.chunk.js"
   },
   {
-    "revision": "416479952a7218aa2dcd",
-    "url": "/euro-24/static/js/main.1b660e38.chunk.js"
+    "revision": "5817a8fedf6985545d32",
+    "url": "/euro-24/static/js/main.0c52c488.chunk.js"
   },
   {
     "revision": "b420175310490bfe0296",
     "url": "/euro-24/static/js/runtime~main.af0c163b.js"
   },
   {
+    "revision": "44e471cb50395f57ed643f86d7270ffc",
+    "url": "/euro-24/static/media/dom.44e471cb.jpg"
+  },
+  {
+    "revision": "d1fc2cfe9f5be89cb1b1ca69821b5e00",
+    "url": "/euro-24/static/media/example.d1fc2cfe.jpg"
+  },
+  {
+    "revision": "252ddadeeaa1d9a50226bea5ee0055c6",
+    "url": "/euro-24/static/media/example2.252ddade.jpg"
+  },
+  {
+    "revision": "c35aaedcb893a48275b3692c09ebbc0b",
+    "url": "/euro-24/static/media/example3.c35aaedc.jpg"
+  },
+  {
+    "revision": "b0d27cac8fe367c698c61481a7877f94",
+    "url": "/euro-24/static/media/example4.b0d27cac.jpg"
+  },
+  {
+    "revision": "1786cf7316d55092565534bf2ff918dd",
+    "url": "/euro-24/static/media/example5.1786cf73.jpg"
+  },
+  {
     "revision": "7d347823c5ed775b8dce56590a1af464",
     "url": "/euro-24/static/media/illustration-greeting.7d347823.svg"
+  },
+  {
+    "revision": "fb1b09cda3a3ae3fd82670b42e737423",
+    "url": "/euro-24/static/media/illustration-reviews.fb1b09cd.svg"
   },
   {
     "revision": "066d36ae64a34a3e314dc3e29f82301c",
