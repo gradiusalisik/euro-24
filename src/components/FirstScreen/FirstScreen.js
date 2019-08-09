@@ -6,7 +6,7 @@ import { firstScreen } from "../../assets/dataJson/firstScreen";
 
 import {
   FirstScreenStyled,
-  Left,
+  Info,
   Title,
   Description,
   Buttons,
@@ -22,14 +22,14 @@ const { title, description, image, brands } = firstScreen;
 const FirstScreen = () => (
   <FirstScreenStyled>
     <Container>
-      <Left>
+      <Info>
         <Title dangerouslySetInnerHTML={{ __html: title }} />
         <Description>{description}</Description>
         <Buttons>
           <Button>Подобрать для себя</Button>
           <Button>Задать вопрос</Button>
         </Buttons>
-      </Left>
+      </Info>
       <Image src={image} alt="repairs" />
     </Container>
     <Brands>

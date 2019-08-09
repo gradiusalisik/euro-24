@@ -5,6 +5,8 @@ import { Element } from "react-scroll";
 import Header from "./components/Header/Header";
 import FirstScreen from "./components/FirstScreen/FirstScreen";
 import SliderStocks from "./components/SliderStocks/SliderStocks";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Reviews from "./components/Reviews/Reviews";
 
 import { AppStyled, HeaderScroll } from "./App.styled.js";
 
@@ -44,8 +46,12 @@ const App = () => {
       <Element name="stocks">
         <SliderStocks />
       </Element>
-      <Element name="portfolio">portfolio</Element>
-      <Element name="reviews">reviews</Element>
+      <Element name="portfolio">
+        <Portfolio />
+      </Element>
+      <Element name="reviews">
+        <Reviews />
+      </Element>
     </AppStyled>
   );
 };

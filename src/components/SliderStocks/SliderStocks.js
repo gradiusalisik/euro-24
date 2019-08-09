@@ -15,6 +15,7 @@ const SliderStocks = () => {
     <SliderStocksStyled {...settings}>
       {stocks.map(stock => (
         <CardStocksStyled
+          key={stock.id}
           image={stock.image}
           title={stock.title}
           text={stock.text}
