@@ -1,26 +1,28 @@
 import React from "react";
 import { PropTypes as pt } from "prop-types";
 
-import { TagsStyled, TagStyled } from "./Tags.styled";
+import { TagsStyled, TagStyled, List } from "./Tags.styled";
 
-const Tags = ({ onClick, tags, tagIds }) => {
+const Tags = ({ onClick, tags, tagIds, className }) => {
   const handleClick = id => () => {
     onClick(id);
   };
 
   return (
-    <TagsStyled>
-      {tags.map(tag => {
-        return (
-          <TagStyled
-            key={tag.id}
-            onClick={handleClick(tag.id)}
-            isActive={tagIds.includes(tag.id)}
-          >
-            {tag.text}
-          </TagStyled>
-        );
-      })}
+    <TagsStyled className={className}>
+      <List>
+        {tags.map(tag => {
+          return (
+            <TagStyled
+              key={tag.id}
+              onClick={handleClick(tag.id)}
+              isActive={tagIds.includes(tag.id)}
+            >
+              {tag.text}
+            </TagStyled>
+          );
+        })}
+      </List>
     </TagsStyled>
   );
 };

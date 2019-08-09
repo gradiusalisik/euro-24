@@ -1,5 +1,4 @@
 import React from "react";
-// tslint:disable:max-line-length
 
 export const Logo = (props: any) => (
   <svg

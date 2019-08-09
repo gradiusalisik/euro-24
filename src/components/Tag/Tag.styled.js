@@ -7,6 +7,7 @@ export const TagStyled = styled.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-width: 100px;
   height: 30px;
   font-size: 14px;
   white-space: nowrap;
