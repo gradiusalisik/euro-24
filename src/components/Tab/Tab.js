@@ -1,11 +1,21 @@
 import React from "react";
+import { PropTypes as pt } from "prop-types";
 
-import { TabStyled, TabBlueStyled } from "./Tab.styled";
+import { TabStyled } from "./Tab.styled";
 
-export const Tab = ({ children }) => (
-  <TabStyled>{children}</TabStyled>
+const Tab = ({ children, className, isActive, onClick }) => (
+  <TabStyled isActive={isActive} className={className} onClick={onClick}>
+    {children}
+  </TabStyled>
 );
 
-export const TabBlue = ({ children }) => (
-  <TabBlueStyled>{children}</TabBlueStyled>
-);
+Tab.propTypes = {
+  isActive: pt.bool,
+  onClick: pt.func
+};
+
+Tab.defaultProps = {
+  onClick: () => {}
+};
+
+export default Tab;

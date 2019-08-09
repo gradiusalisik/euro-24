@@ -1,11 +1,21 @@
 import React from "react";
+import { PropTypes as pt } from "prop-types";
 
-import { TagStyled, TagBlueStyled } from "./Tag.styled";
+import { TagStyled } from "./Tag.styled";
 
-export const Tag = ({ children }) => (
-  <TagStyled>{children}</TagStyled>
+const Tag = ({ children, className, isActive, onClick }) => (
+  <TagStyled isActive={isActive} className={className} onClick={onClick}>
+    {children}
+  </TagStyled>
 );
 
-export const TagBlue = ({ children }) => (
-  <TagBlueStyled>{children}</TagBlueStyled>
-);
+Tag.propTypes = {
+  isActive: pt.bool,
+  onClick: pt.func
+};
+
+Tag.defaultProps = {
+  onClick: () => {}
+};
+
+export default Tag;

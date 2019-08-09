@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled, { css } from "styled-components";
 import { colors } from "../../variables";
 
-export const TagStyled = styled.button `
+export const TagStyled = styled.button`
   padding-left: 15px;
   padding-right: 15px;
   display: inline-flex;
@@ -10,26 +10,29 @@ export const TagStyled = styled.button `
   height: 30px;
   font-size: 14px;
   white-space: nowrap;
-  color: #7e8fa4;
+  color: ${colors.gray};
   border-radius: 20px;
   background-color: ${colors.white};
-  border: solid 1px #7e8fa4;
-  transition: border .3s, color .3s;
+  border: 1px solid ${colors.gray};
+  cursor: pointer;
+  transition: border 0.3s, color 0.3s, background-color 0.3s;
 
   &:hover {
     color: ${colors.brightblue};
-    border: solid 1px ${colors.brightblue};
-}`;
-
-export const TagBlueStyled = styled(TagStyled) `
-  border: none;
-  color: ${colors.white};
-  background-color: ${colors.brightblue};
-  transition: background-color .3s;
-
-  &:hover {
-    color: ${colors.white};
-    background-color: ${colors.vividBlue};
-    border: none;
+    border: 1px solid ${colors.brightblue};
   }
+
+  ${props =>
+    props.isActive &&
+    css`
+      border: 1px solid transparent;
+      color: ${colors.white};
+      background-color: ${colors.brightblue};
+
+      &:hover {
+        color: ${colors.white};
+        background-color: ${colors.vividBlue};
+        border: 1px solid transparent;
+      }
+    `}
 `;

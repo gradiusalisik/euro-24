@@ -6,7 +6,7 @@ export const FirstScreenStyled = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(100vh - 130px);
+  min-height: calc(100vh - 130px);
 `;
 
 export const Container = styled.div`
