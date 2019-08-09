@@ -4,6 +4,9 @@ import { Element } from "react-scroll";
 
 import Header from "./components/Header/Header";
 import FirstScreen from "./components/FirstScreen/FirstScreen";
+import SliderStocks from "./components/SliderStocks/SliderStocks";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Reviews from "./components/Reviews/Reviews";
 
 // TODO Delete ME later
 import { Tag, TagBlue } from "./components/Tag/Tag";
@@ -44,9 +47,16 @@ const App = () => {
       <Element name="repair">repair</Element>
       <Element name="balconies">balconies</Element>
       <Element name="services">services</Element>
-      <Element name="stocks">stocks</Element>
-      <Element name="portfolio">portfolio</Element>
-      <Element name="reviews">reviews</Element>
+      <Element name="stocks">
+        <SliderStocks />
+      </Element>
+      <Element name="portfolio">
+        <Portfolio />
+      </Element>
+      <Element name="reviews">
+        <Reviews />
+      </Element>
+      {/* TODO deleete */}
       <Tag>Премиальные</Tag>
       <TagBlue>Премиальные</TagBlue>
       <Tab>Рольставни</Tab>
