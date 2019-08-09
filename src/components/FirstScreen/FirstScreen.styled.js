@@ -18,7 +18,7 @@ export const Container = styled.div`
   flex-wrap: wrap;
 `;
 
-export const Left = styled.div`
+export const Info = styled.div`
   margin-right: 40px;
   max-width: 610px;
   width: 100%;
@@ -64,6 +64,7 @@ export const Brands = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 `;
 
 export const Item = styled.ul``;
