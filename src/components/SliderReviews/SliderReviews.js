@@ -14,13 +14,13 @@ const SliderReviews = React.forwardRef(({ className }, ref) => {
 
   return (
     <SliderReviewsStyled {...settings} className={className} ref={ref}>
-      {reviews.map(item => (
+      {reviews.map(review => (
         <CardReviewsStyled
-          key={item.id}
-          images={item.images}
-          description={item.description}
-          date={item.date}
-          name={item.name}
+          key={review.id}
+          images={review.images}
+          description={review.description}
+          date={review.date}
+          name={review.name}
         />
       ))}
     </SliderReviewsStyled>

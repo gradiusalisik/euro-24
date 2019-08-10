@@ -34,7 +34,7 @@ const Reviews = () => {
           <Button>Оставить отзыв</Button>
         </Wrap>
       </Info>
-      <SliderReviewsStyled />
+      <SliderReviewsStyled ref={sliderEl} />
     </ReviewsStyled>
   );
 };
