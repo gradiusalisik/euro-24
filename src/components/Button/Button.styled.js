@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components';
+import styled, { css } from "styled-components";
 import { colors } from "../../variables";
 
 const ButtonBase = css`
@@ -23,7 +23,7 @@ const buttonTheme = {
     background-color: ${colors.brightblue};
     border: none;
     box-shadow: 0 4px 8px 0 rgba(86, 149, 237, 0.15);
-    transition: background-color .3s;
+    transition: background-color 0.3s;
 
     &:hover {
       background-color: ${colors.vividBlue};
@@ -42,7 +42,7 @@ const buttonTheme = {
     color: ${colors.orange};
     background-color: ${colors.white};
     border: 1px solid ${colors.vividOrange};
-    transition: background-color .3s, color .3s, border-color .3s;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 
     &:hover,
     &:active {
@@ -70,7 +70,7 @@ const buttonTheme = {
     background-color: ${colors.softOrange};
     border: none;
     box-shadow: 0 4px 8px 0 rgba(230, 120, 44, 0.15);
-    transition: background-color .3s;
+    transition: background-color 0.3s;
 
     &:hover {
       background-color: ${colors.vividOrangeTwo};
@@ -85,9 +85,9 @@ const buttonTheme = {
       box-shadow: none;
     }
   `
-}
+};
 
-export const ButtonStyled = styled.button `
+export const ButtonStyled = styled.button`
   ${ButtonBase};
   ${p => buttonTheme[p.theme]}
 `;
