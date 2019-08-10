@@ -6,6 +6,7 @@ export const Label = styled.label`
 
 export const Text = styled.span`
   position: relative;
+  padding-left: 32px;
   display: inline-flex;
   font-size: 16px;
   color: ${colors.gray};
@@ -15,7 +16,8 @@ export const Text = styled.span`
   align-items: center;
 
   &:before {
-    margin-right: 8px;
+    position: absolute;
+    left: 8px;
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -27,7 +29,7 @@ export const Text = styled.span`
 
   &:after {
     position: absolute;
-    left: 4px;
+    left: 12px;
     top: 5px;
     content: "";
     width: 9px;
