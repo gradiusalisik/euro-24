@@ -1,36 +1,34 @@
 import styled from "styled-components";
 import { colors } from "../../variables";
 
-export const Label = styled.label`
-`;
+export const Label = styled.label``;
 
 export const Text = styled.span`
   position: relative;
   padding-left: 32px;
-  display: inline-flex;
   font-size: 16px;
   color: ${colors.gray};
-  border-radius: 2px;
+  line-height: normal;
   cursor: pointer;
   user-select: none;
-  align-items: center;
 
   &:before {
     position: absolute;
+    top: 2px;
     left: 8px;
-    display: inline-block;
     width: 16px;
     height: 16px;
-    content: '';
+    content: "";
     border: 1px solid ${colors.whiteBlue};
+    border-radius: 2px;
     background-color: ${colors.white};
-    transition: background-color .3s; 
+    transition: background-color 0.3s;
   }
 
   &:after {
     position: absolute;
     left: 12px;
-    top: 5px;
+    top: 6px;
     content: "";
     width: 9px;
     height: 4px;
