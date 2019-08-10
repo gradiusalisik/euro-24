@@ -13,6 +13,8 @@ import Cupboard from "./components/Cupboard/Cupboard";
 import Services from "./components/Services/Services";
 import Nets from "./components/Nets/Nets";
 import Window from "./components/Window/Window";
+import Repair from "./components/Repair/Repair";
+
 import { AppStyled, HeaderScroll } from "./App.styled.js";
 
 const App = () => {
@@ -49,7 +51,9 @@ const App = () => {
         <Jalousie />
         <Nets />
       </Element>
-      <Element name="repair">repair</Element>
+      <Element name="repair">
+        <Repair />
+      </Element>
       <Element name="balconies">
         <Balconies />
         <Cupboard />
