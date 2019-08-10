@@ -10,7 +10,6 @@ export const Advantages = styled.div`
   margin-left: -40px;
   display: flex;
   flex-wrap: wrap;
-  min-width: 634px;
 `;
 
 export const AdvantageStyled = styled(Advantage)`

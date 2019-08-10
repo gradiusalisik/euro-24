@@ -64,7 +64,7 @@ const cardStyleDefaultHover = css`
 export const RepairInfoStyled = styled.div`
   position: relative;
   padding-right: 56px;
-  width: calc(100% - 270px);
+  width: calc(100% - 240px);
   flex: 0 0 auto;
   transform: translateX(100%) scaleX(0);
   opacity: 0;
@@ -79,7 +79,7 @@ export const Info = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  min-width: 270px;
+  min-width: 240px;
   flex: 1 0 auto;
   transition: width 0.2s ease-in-out;
 `;
@@ -142,7 +142,7 @@ const hoverBlock = {
 const activeBlock = {
   window: css`
     ${Window} {
-      width: 82%;
+      width: 83%;
       cursor: default;
 
       ${Info} {
@@ -155,7 +155,7 @@ const activeBlock = {
     }
 
     ${Balconies} {
-      width: 18%;
+      width: 17%;
 
       &::before {
         background-color: rgba(50, 60, 72, 0.9);
@@ -164,7 +164,7 @@ const activeBlock = {
   `,
   balconies: css`
     ${Balconies} {
-      width: 82%;
+      width: 83%;
       cursor: default;
 
       ${Info} {
@@ -178,7 +178,7 @@ const activeBlock = {
     }
 
     ${Window} {
-      width: 18%;
+      width: 17%;
 
       &::before {
         background-color: rgba(50, 60, 72, 0.9);
@@ -190,7 +190,7 @@ const activeBlock = {
 const activeBlockAfterHover = {
   window: css`
     ${Window} {
-      width: 82%;
+      width: 83%;
 
       &:hover {
         ${cardStyleDefaultHover}
@@ -198,7 +198,7 @@ const activeBlockAfterHover = {
     }
 
     ${Balconies} {
-      width: 18%;
+      width: 17%;
 
       &::before {
         background-color: rgba(50, 60, 72, 0.9);
@@ -212,7 +212,7 @@ const activeBlockAfterHover = {
   `,
   balconies: css`
     ${Balconies} {
-      width: 82%;
+      width: 83%;
 
       &:hover {
         ${cardStyleDefaultHover}
@@ -220,7 +220,7 @@ const activeBlockAfterHover = {
     }
 
     ${Window} {
-      width: 18%;
+      width: 17%;
 
       &::before {
         background-color: rgba(50, 60, 72, 0.9);
