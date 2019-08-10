@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "825798d1cf1b780d70a475c17519126f",
+    "revision": "5fce97a86df2305c98e6adfb51c681a8",
     "url": "/euro-24/index.html"
   },
   {
-    "revision": "5817a8fedf6985545d32",
-    "url": "/euro-24/static/css/main.528b90c6.chunk.css"
+    "revision": "54de290d84a7d80e5bb3",
+    "url": "/euro-24/static/css/main.f0b32748.chunk.css"
   },
   {
-    "revision": "201b3fc9a9d06d1c477b",
-    "url": "/euro-24/static/js/2.0421fb10.chunk.js"
+    "revision": "7da038fe01a9dd865545",
+    "url": "/euro-24/static/js/2.ffaf08d1.chunk.js"
   },
   {
-    "revision": "5817a8fedf6985545d32",
-    "url": "/euro-24/static/js/main.0c52c488.chunk.js"
+    "revision": "54de290d84a7d80e5bb3",
+    "url": "/euro-24/static/js/main.4882f3d8.chunk.js"
   },
   {
     "revision": "b420175310490bfe0296",
     "url": "/euro-24/static/js/runtime~main.af0c163b.js"
+  },
+  {
+    "revision": "a19aeb6e31b27572bf70d7fd481afcfd",
+    "url": "/euro-24/static/media/balconies.a19aeb6e.jpg"
   },
   {
     "revision": "44e471cb50395f57ed643f86d7270ffc",
@@ -44,36 +48,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/euro-24/static/media/example5.1786cf73.jpg"
   },
   {
-    "revision": "7d347823c5ed775b8dce56590a1af464",
-    "url": "/euro-24/static/media/illustration-greeting.7d347823.svg"
+    "revision": "688b9f27e5484ca454c8f5265d80a860",
+    "url": "/euro-24/static/media/illustration-greeting.688b9f27.svg"
   },
   {
-    "revision": "fb1b09cda3a3ae3fd82670b42e737423",
-    "url": "/euro-24/static/media/illustration-reviews.fb1b09cd.svg"
+    "revision": "d762d4d15906ba696a760005b235b0e0",
+    "url": "/euro-24/static/media/illustration-reviews.d762d4d1.svg"
   },
   {
-    "revision": "066d36ae64a34a3e314dc3e29f82301c",
-    "url": "/euro-24/static/media/logo-kbe.066d36ae.svg"
+    "revision": "d35dccb1c64363ea9b9b69ab3766ba15",
+    "url": "/euro-24/static/media/logo-kbe.d35dccb1.svg"
   },
   {
-    "revision": "caf84ab8f354570328c1ac81243d2007",
-    "url": "/euro-24/static/media/logo-rehau.caf84ab8.svg"
+    "revision": "505e04dd0e6b4589d29669683d9ea70a",
+    "url": "/euro-24/static/media/logo-rehau.505e04dd.svg"
   },
   {
-    "revision": "1c8cba2abc0da167102854dc82ae7d8d",
-    "url": "/euro-24/static/media/logo-salamander.1c8cba2a.svg"
+    "revision": "28e0a66a98c4efe2bdc8c72b6f164a02",
+    "url": "/euro-24/static/media/logo-salamander.28e0a66a.svg"
   },
   {
-    "revision": "8497ada603c927a86fce6533fa122a95",
-    "url": "/euro-24/static/media/logo-schuco.8497ada6.svg"
+    "revision": "d47d17dd81e73568e8d062c250968ea7",
+    "url": "/euro-24/static/media/logo-schuco.d47d17dd.svg"
   },
   {
-    "revision": "058e8083bdeaddb28ec5ed77aad5c1ab",
-    "url": "/euro-24/static/media/logo-trocal.058e8083.svg"
+    "revision": "31074c41a79684394a54157eaf0fda8b",
+    "url": "/euro-24/static/media/logo-trocal.31074c41.svg"
   },
   {
-    "revision": "12eb9a9cbb92845fd581a0b22b0a831c",
-    "url": "/euro-24/static/media/logo-veka.12eb9a9c.svg"
+    "revision": "2d81f690fc5635c2c22f21a04e87546d",
+    "url": "/euro-24/static/media/logo-veka.2d81f690.svg"
   },
   {
     "revision": "0fc7377a8a8fedc834c75d3632c40567",
@@ -130,5 +134,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e31f8a49e5a9e02c292f1cad6b480d24",
     "url": "/euro-24/static/media/roboto-regular.e31f8a49.woff2"
+  },
+  {
+    "revision": "964293b79c008a650793d077953130e2",
+    "url": "/euro-24/static/media/window.964293b7.jpg"
   }
 ]);
