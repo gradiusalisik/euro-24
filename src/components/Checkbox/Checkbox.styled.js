@@ -2,29 +2,6 @@ import styled from "styled-components";
 import { colors } from "../../variables";
 
 export const Label = styled.label`
-  position: relative;
-  display: inline-block;
-`;
-
-export const Input = styled.input`
-  position: absolute;
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  border: 0;
-  margin: -1px;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
-
-  &:checked + span:before {
-    background-color: ${colors.vividBlue};
-  }
-
-  &:checked + span:after {
-    opacity: 1;
-  }
 `;
 
 export const Text = styled.span`
@@ -60,5 +37,26 @@ export const Text = styled.span`
     border-top: none;
     border-right: none;
     transform: rotate(-52deg);
+  }
+`;
+
+export const Input = styled.input`
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+
+  &:checked + ${Text}:before {
+    background-color: ${colors.vividBlue};
+  }
+
+  &:checked + ${Text}:after {
+    opacity: 1;
   }
 `;

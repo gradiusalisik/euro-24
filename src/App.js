@@ -13,7 +13,7 @@ import Cupboard from "./components/Cupboard/Cupboard";
 import Services from "./components/Services/Services";
 import Nets from "./components/Nets/Nets";
 import Window from "./components/Window/Window";
-
+import Checkbox from "./components/Checkbox/Checkbox";
 import { AppStyled, HeaderScroll } from "./App.styled.js";
 
 const App = () => {
@@ -45,6 +45,7 @@ const App = () => {
 
       <HeaderScroll isScroll isShowHeader={isShowHeader} />
       <FirstScreen />
+      <Checkbox>twst</Checkbox>
       <Element name="window">
         <Window />
         <Jalousie />
