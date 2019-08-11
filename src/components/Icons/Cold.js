@@ -8,7 +8,7 @@ export const Cold = (props: any) => (
     viewBox="0 0 32 29"
     {...props}
   >
-    <g fill="none" fill-rule="nonzero">
+    <g fill="none" fillRule="nonzero">
       <path
         fill="#94C1FF"
         d="M22.744 14.25l-2.498-2.497 2.498-2.498 2.497 2.498z"

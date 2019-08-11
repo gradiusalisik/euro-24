@@ -28,18 +28,21 @@ const CardDescription = ({
   onClickNext,
   className
 }) => {
-  console.log(currentSlide, "currentlse");
+  const count = currentSlide !== undefined ? currentSlide : 0;
+
   return (
-    <CardDescriptionStyled className={className}>
+    <CardDescriptionStyled className={className} count={count}>
       <Head>
         <Title>{title}</Title>
-        <SliderButtonStyled
-          size="small"
-          slideCount={slideCount}
-          currentSlide={currentSlide}
-          onClickPrev={onClickPrev}
-          onClickNext={onClickNext}
-        />
+        {slideCount > 0 && (
+          <SliderButtonStyled
+            size="small"
+            slideCount={slideCount}
+            currentSlide={currentSlide}
+            onClickPrev={onClickPrev}
+            onClickNext={onClickNext}
+          />
+        )}
       </Head>
       <Content>
         {tags && (

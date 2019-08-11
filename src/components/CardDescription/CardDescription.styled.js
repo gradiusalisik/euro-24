@@ -1,9 +1,22 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { colors } from "../../variables";
 import SliderButton from "../SliderButton/SliderButton";
 
 export const CardDescriptionStyled = styled.div`
   width: 300px;
+  opacity: 0;
+  transform: translateX(0);
+  transition: transform 0.7s ease-in, opacity 0.7s ease-in;
+
+  &:nth-child(${p => p.count + 1}) {
+    opacity: 1;
+  }
+
+  ${p =>
+    p.count &&
+    css`
+      transform: translateX(-${p.count * 300}px);
+    `}
 `;
 
 export const Head = styled.div`

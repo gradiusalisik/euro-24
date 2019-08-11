@@ -7,18 +7,22 @@ import { setTag } from "../../utils/setTag";
 
 import Title from "../Title/Title";
 import Tags from "../Tags/Tags";
+import Button from "../Button/Button";
 
 import {
   WindowStyled,
   Content,
   Visual,
   Photo,
-  ButtonStyled,
+  ButtonColor,
   Information,
   Slides,
   List,
   CardDescriptionStyled,
-  Colors
+  Colors,
+  Advantages,
+  Buttons,
+  AdvantageStyled
 } from "./Window.styled";
 
 const Window = () => {
@@ -27,24 +31,27 @@ const Window = () => {
   const [tagIds, setTagId] = useState([tags[0].id]);
   const [newSlides, setNewSlides] = useState(defaultSlides);
   const [background, setBackground] = useState(newSlides[0].background);
+  const [advantages, setAdvantages] = useState(newSlides[0].advantages);
   const [count, setCount] = useState(0);
 
   const handleClick = id => {
     setTagId(setTag(tagIds, id));
     setBackground(newSlides[0].background);
+    setAdvantages(newSlides[0].advantages);
     setCount(0);
   };
 
   useEffect(() => {
-    setNewSlides(
-      slides.filter(slide => slide.tags.map(item => tagIds.includes(item)))
+    const newSlidesArr = slides.filter(({ tags }) =>
+      tags.some(tag => tagIds.includes(tag))
     );
-  }, [tagIds]);
 
-  console.log(newSlides, background, "slides", tagIds);
+    setNewSlides(newSlidesArr);
+  }, [tagIds]);
 
   useEffect(() => {
     setBackground(newSlides[count].background);
+    setAdvantages(newSlides[count].advantages);
   }, [count, newSlides]);
 
   const handleClickPrev = () => {
@@ -68,7 +75,7 @@ const Window = () => {
         <Information>
           <Visual>
             <Photo background={background} />
-            <ButtonStyled>Хочу вызвать мастера</ButtonStyled>
+            <ButtonColor>Хочу вызвать мастера</ButtonColor>
           </Visual>
           <Slides>
             <List>
@@ -83,13 +90,28 @@ const Window = () => {
                   slideCount={newSlides.length - 1}
                   onClickPrev={handleClickPrev}
                   onClickNext={handleClickNext}
-                />
+                >
+                  <Buttons>
+                    <Button size="full">Заказать окна</Button>
+                    <Button size="full">Рассчитать стоимость</Button>
+                  </Buttons>
+                </CardDescriptionStyled>
               ))}
             </List>
           </Slides>
         </Information>
 
-        <Colors />
+        {/* <Colors /> */}
+        <Advantages>
+          {advantages.map(advantage => (
+            <AdvantageStyled
+              key={advantage.id}
+              icon={advantage.icon}
+              title={advantage.title}
+              description={advantage.description}
+            />
+          ))}
+        </Advantages>
       </Content>
     </WindowStyled>
   );

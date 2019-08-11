@@ -8,7 +8,7 @@ export const Decor = (props: any) => (
     viewBox="0 0 43 56"
     {...props}
   >
-    <g fill="none" fill-rule="nonzero">
+    <g fill="none" fillRule="nonzero">
       <path fill="#D7E9FF" d="M.464.473h20.973v55.054H.464z" />
       <path
         fill="#FFF"
