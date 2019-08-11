@@ -17,11 +17,17 @@ const CardServices = ({
   title,
   description,
   price,
-  value,
   onClick,
+  onMouseOver,
+  onMouseOut,
   className
 }) => (
-  <CardServicesStyled onClick={onClick} className={className}>
+  <CardServicesStyled
+    onClick={onClick}
+    onMouseOver={onMouseOver}
+    onMouseOut={onMouseOut}
+    className={className}
+  >
     <Icon>{icon}</Icon>
     <Info>
       <Title>{title}</Title>
@@ -30,7 +36,7 @@ const CardServices = ({
       <PriceWrap>
         <Text>от</Text>
         <Price>{numberWithSpaces(price)}</Price>
-        <Text>{value}</Text>
+        <Text>руб/м2</Text>
       </PriceWrap>
     </Info>
   </CardServicesStyled>

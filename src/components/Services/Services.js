@@ -1,52 +1,113 @@
 import React, { useState } from "react";
 
 // data
-import { tabs, servicesWindow } from "../../assets/dataJson/services";
+import {
+  tabs,
+  servicesWindow,
+  images,
+  servicesBalconies
+} from "../../assets/dataJson/services";
 
-import Title from "../Title/Title";
+import CardServicesInside from "../CardServicesInside/CardServicesInside";
 
 import {
   ServicesStyled,
   Content,
   TabsStyled,
-  CardsServices,
-  CardServicesStyled,
-  Window
+  CardsServicesContentStyled,
+  Visual,
+  Photo,
+  TabContent,
+  ButtonStyled,
+  TitleWrap,
+  ButtonBack,
+  TitleStyled,
+  ContentInside
 } from "./Services.styled";
 
 const Services = () => {
   const [tabId, setTabId] = useState(tabs[0].id);
-  const [serviceId, setServiceId] = useState(tabs[0].id);
+  const [serviceId, setServiceId] = useState(null);
+  const [serviceInside, setServiceInside] = useState(null);
+  const [services, setServices] = useState(null);
 
   const handleClick = id => {
     setTabId(id);
   };
 
-  const handleClickCard = id => () => {
+  const handleClickCard = list => id => {
+    setServiceId(id);
+    setServiceInside(true);
+    setServices(list);
+  };
+
+  const handleMouseOver = id => {
     setServiceId(id);
   };
 
+  const handleResetServiceId = () => {
+    setServiceId(null);
+  };
+
+  const handleBack = () => {
+    handleResetServiceId();
+    setServiceInside(false);
+  };
+
+  const getBackground = () =>
+    serviceId !== null ? images[serviceId] : images[tabId];
+
+  const getTitle = () =>
+    serviceInside
+      ? services.find(element => element.id === serviceId).title
+      : "Наши услуги";
+
+  const serviceInformations =
+    serviceInside && services.find(element => element.id === serviceId).info;
+
   return (
     <ServicesStyled>
-      <Title>Наши услуги</Title>
-      <TabsStyled id={tabId} onClick={handleClick} tabs={tabs} />
+      <TitleWrap>
+        {serviceInside && <ButtonBack onClick={handleBack}>Back</ButtonBack>}
+        <TitleStyled>{getTitle()}</TitleStyled>
+      </TitleWrap>
+      {!serviceInside && (
+        <TabsStyled id={tabId} onClick={handleClick} tabs={tabs} />
+      )}
       <Content>
-        <Window>
-          {/* TODO Вынести в отдельный компонент CardsServices */}
-          <CardsServices>
-            {servicesWindow.map(service => (
-              <CardServicesStyled
-                key={service.id}
-                icon={service.icon}
-                title={service.title}
-                description={service.description}
-                price={service.price}
-                value={service.value}
-                onClick={handleClickCard(service.id)}
+        {serviceInside ? (
+          <ContentInside>
+            {serviceInformations.map(information => (
+              <CardServicesInside
+                key={information.id}
+                title={information.title}
+                description={information.description}
+                price={information.price}
               />
             ))}
-          </CardsServices>
-        </Window>
+          </ContentInside>
+        ) : (
+          <TabContent>
+            <CardsServicesContentStyled
+              isActive={tabId === "window"}
+              services={servicesWindow}
+              onClick={handleClickCard(servicesWindow)}
+              onMouseOver={handleMouseOver}
+              onMouseOut={handleResetServiceId}
+            />
+            <CardsServicesContentStyled
+              isActive={tabId === "balconies"}
+              services={servicesBalconies}
+              onClick={handleClickCard(servicesBalconies)}
+              onMouseOver={handleMouseOver}
+              onMouseOut={handleResetServiceId}
+            />
+          </TabContent>
+        )}
+        <Visual serviceInside={serviceInside}>
+          <Photo background={getBackground()} />
+          <ButtonStyled>Хочу вызвать мастера</ButtonStyled>
+        </Visual>
       </Content>
     </ServicesStyled>
   );
