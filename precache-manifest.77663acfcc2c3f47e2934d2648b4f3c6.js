@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4226f3fbdafa3eb7ad50ce161824b107",
+    "revision": "ee5a30c2ba3c053f1d2a4ea6b7250a9e",
     "url": "/euro-24/index.html"
   },
   {
-    "revision": "9acd32ba53835f0fb442",
+    "revision": "91d44c9d7367877ab074",
     "url": "/euro-24/static/css/main.f0b32748.chunk.css"
   },
   {
-    "revision": "4bcf0afdcc6ef2415c20",
-    "url": "/euro-24/static/js/2.fbb97a92.chunk.js"
+    "revision": "bea8d8e4295070953885",
+    "url": "/euro-24/static/js/2.de0a9a14.chunk.js"
   },
   {
-    "revision": "9acd32ba53835f0fb442",
-    "url": "/euro-24/static/js/main.566356e7.chunk.js"
+    "revision": "91d44c9d7367877ab074",
+    "url": "/euro-24/static/js/main.642082ef.chunk.js"
   },
   {
     "revision": "b420175310490bfe0296",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "44e471cb50395f57ed643f86d7270ffc",
     "url": "/euro-24/static/media/dom.44e471cb.jpg"
+  },
+  {
+    "revision": "44e471cb50395f57ed643f86d7270ffc",
+    "url": "/euro-24/static/media/example.44e471cb.jpg"
   },
   {
     "revision": "d1fc2cfe9f5be89cb1b1ca69821b5e00",
