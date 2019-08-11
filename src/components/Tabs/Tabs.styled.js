@@ -1,3 +1,5 @@
 import styled from "styled-components";
 
-export const TabsStyled = styled.div``;
+export const TabsStyled = styled.div`
+  text-align: center;
+`;

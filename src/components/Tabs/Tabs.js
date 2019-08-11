@@ -5,13 +5,13 @@ import Tab from "../Tab/Tab";
 
 import { TabsStyled } from "./Tabs.styled";
 
-const Tabs = ({ id, onClick, tabs }) => {
+const Tabs = ({ id, onClick, tabs, className }) => {
   const handleClick = id => () => {
     onClick(id);
   };
 
   return (
-    <TabsStyled>
+    <TabsStyled className={className}>
       {tabs.map(tab => (
         <Tab
           key={tab.id}
