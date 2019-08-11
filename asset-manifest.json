@@ -1,17 +1,19 @@
 {
   "files": {
     "main.css": "/euro-24/static/css/main.f0b32748.chunk.css",
-    "main.js": "/euro-24/static/js/main.4882f3d8.chunk.js",
-    "main.js.map": "/euro-24/static/js/main.4882f3d8.chunk.js.map",
+    "main.js": "/euro-24/static/js/main.566356e7.chunk.js",
+    "main.js.map": "/euro-24/static/js/main.566356e7.chunk.js.map",
     "runtime~main.js": "/euro-24/static/js/runtime~main.af0c163b.js",
     "runtime~main.js.map": "/euro-24/static/js/runtime~main.af0c163b.js.map",
-    "static/js/2.ffaf08d1.chunk.js": "/euro-24/static/js/2.ffaf08d1.chunk.js",
-    "static/js/2.ffaf08d1.chunk.js.map": "/euro-24/static/js/2.ffaf08d1.chunk.js.map",
+    "static/js/2.fbb97a92.chunk.js": "/euro-24/static/js/2.fbb97a92.chunk.js",
+    "static/js/2.fbb97a92.chunk.js.map": "/euro-24/static/js/2.fbb97a92.chunk.js.map",
     "index.html": "/euro-24/index.html",
-    "precache-manifest.cfb9ac1518061cea8f67d4b8839fd310.js": "/euro-24/precache-manifest.cfb9ac1518061cea8f67d4b8839fd310.js",
+    "precache-manifest.f177e216d317001352f67d8d1cc3300f.js": "/euro-24/precache-manifest.f177e216d317001352f67d8d1cc3300f.js",
     "service-worker.js": "/euro-24/service-worker.js",
     "static/css/main.f0b32748.chunk.css.map": "/euro-24/static/css/main.f0b32748.chunk.css.map",
     "static/media/balconies.jpg": "/euro-24/static/media/balconies.a19aeb6e.jpg",
+    "static/media/blocks.jpg": "/euro-24/static/media/blocks.eb8f6bf0.jpg",
+    "static/media/decor.jpg": "/euro-24/static/media/decor.eb75820c.jpg",
     "static/media/dom.jpg": "/euro-24/static/media/dom.44e471cb.jpg",
     "static/media/example.jpg": "/euro-24/static/media/example.d1fc2cfe.jpg",
     "static/media/example2.jpg": "/euro-24/static/media/example2.252ddade.jpg",
@@ -20,13 +22,17 @@
     "static/media/example5.jpg": "/euro-24/static/media/example5.1786cf73.jpg",
     "static/media/illustration-greeting.svg": "/euro-24/static/media/illustration-greeting.688b9f27.svg",
     "static/media/illustration-reviews.svg": "/euro-24/static/media/illustration-reviews.d762d4d1.svg",
+    "static/media/kladka.jpg": "/euro-24/static/media/kladka.95e3c600.jpg",
     "static/media/logo-kbe.svg": "/euro-24/static/media/logo-kbe.d35dccb1.svg",
     "static/media/logo-rehau.svg": "/euro-24/static/media/logo-rehau.505e04dd.svg",
     "static/media/logo-salamander.svg": "/euro-24/static/media/logo-salamander.28e0a66a.svg",
     "static/media/logo-schuco.svg": "/euro-24/static/media/logo-schuco.d47d17dd.svg",
     "static/media/logo-trocal.svg": "/euro-24/static/media/logo-trocal.31074c41.svg",
     "static/media/logo-veka.svg": "/euro-24/static/media/logo-veka.2d81f690.svg",
+    "static/media/move-second.jpg": "/euro-24/static/media/move-second.70f65f0b.jpg",
+    "static/media/move.jpg": "/euro-24/static/media/move.ec162909.jpg",
     "static/media/font.css": "/euro-24/static/media/roboto-regular.e31f8a49.woff2",
-    "static/media/window.jpg": "/euro-24/static/media/window.964293b7.jpg"
+    "static/media/window.jpg": "/euro-24/static/media/window.964293b7.jpg",
+    "static/media/woods.jpg": "/euro-24/static/media/woods.110a5a33.jpg"
   }
 }

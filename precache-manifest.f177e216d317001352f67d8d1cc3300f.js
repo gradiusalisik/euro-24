@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5fce97a86df2305c98e6adfb51c681a8",
+    "revision": "4226f3fbdafa3eb7ad50ce161824b107",
     "url": "/euro-24/index.html"
   },
   {
-    "revision": "54de290d84a7d80e5bb3",
+    "revision": "9acd32ba53835f0fb442",
     "url": "/euro-24/static/css/main.f0b32748.chunk.css"
   },
   {
-    "revision": "7da038fe01a9dd865545",
-    "url": "/euro-24/static/js/2.ffaf08d1.chunk.js"
+    "revision": "4bcf0afdcc6ef2415c20",
+    "url": "/euro-24/static/js/2.fbb97a92.chunk.js"
   },
   {
-    "revision": "54de290d84a7d80e5bb3",
-    "url": "/euro-24/static/js/main.4882f3d8.chunk.js"
+    "revision": "9acd32ba53835f0fb442",
+    "url": "/euro-24/static/js/main.566356e7.chunk.js"
   },
   {
     "revision": "b420175310490bfe0296",
@@ -22,6 +22,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a19aeb6e31b27572bf70d7fd481afcfd",
     "url": "/euro-24/static/media/balconies.a19aeb6e.jpg"
+  },
+  {
+    "revision": "eb8f6bf0cf6a630f0fd06e860a231d07",
+    "url": "/euro-24/static/media/blocks.eb8f6bf0.jpg"
+  },
+  {
+    "revision": "eb75820c5c6d1fed880c3fb27d3c400a",
+    "url": "/euro-24/static/media/decor.eb75820c.jpg"
   },
   {
     "revision": "44e471cb50395f57ed643f86d7270ffc",
@@ -56,6 +64,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/euro-24/static/media/illustration-reviews.d762d4d1.svg"
   },
   {
+    "revision": "95e3c60090fa8621220469fd6fa0775e",
+    "url": "/euro-24/static/media/kladka.95e3c600.jpg"
+  },
+  {
     "revision": "d35dccb1c64363ea9b9b69ab3766ba15",
     "url": "/euro-24/static/media/logo-kbe.d35dccb1.svg"
   },
@@ -78,6 +90,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2d81f690fc5635c2c22f21a04e87546d",
     "url": "/euro-24/static/media/logo-veka.2d81f690.svg"
+  },
+  {
+    "revision": "70f65f0b5a9b17a052e6837b361632d2",
+    "url": "/euro-24/static/media/move-second.70f65f0b.jpg"
+  },
+  {
+    "revision": "ec162909116ee991fcea3f926609f462",
+    "url": "/euro-24/static/media/move.ec162909.jpg"
   },
   {
     "revision": "0fc7377a8a8fedc834c75d3632c40567",
@@ -138,5 +158,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "964293b79c008a650793d077953130e2",
     "url": "/euro-24/static/media/window.964293b7.jpg"
+  },
+  {
+    "revision": "110a5a33b6cc6e22337c0beb89306175",
+    "url": "/euro-24/static/media/woods.110a5a33.jpg"
   }
 ]);
