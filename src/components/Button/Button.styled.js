@@ -1,11 +1,17 @@
 import styled, {css} from 'styled-components';
 import { colors } from "../../variables";
 
+export const Wrap = styled.div`
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  /* height: 100%; */
+  /*TODO Без высоты, иначе всё ломает */
+`;
+
 const ButtonBase = css`
   padding-left: 24px;
   padding-right: 24px;
-  display: inline-flex;
-  justify-content: center;
   height: 40px;
   font-size: 16px;
   border-radius: 2px;
