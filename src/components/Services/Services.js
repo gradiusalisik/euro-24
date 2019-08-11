@@ -22,7 +22,8 @@ import {
   TitleWrap,
   ButtonBack,
   TitleStyled,
-  ContentInside
+  ContentInside,
+  ArrowBackStyled
 } from "./Services.styled";
 
 const Services = () => {
@@ -68,7 +69,11 @@ const Services = () => {
   return (
     <ServicesStyled>
       <TitleWrap>
-        {serviceInside && <ButtonBack onClick={handleBack}>Back</ButtonBack>}
+        {serviceInside && (
+          <ButtonBack onClick={handleBack}>
+            <ArrowBackStyled />
+          </ButtonBack>
+        )}
         <TitleStyled>{getTitle()}</TitleStyled>
       </TitleWrap>
       {!serviceInside && (

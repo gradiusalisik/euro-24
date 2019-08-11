@@ -13,13 +13,15 @@ const SliderButton = ({
   onClickPrev,
   currentSlide,
   slideCount,
+  size,
   className
 }) => {
-  const disabledPrev = currentSlide && currentSlide === 0;
-  const disabledNext = currentSlide && currentSlide === slideCount;
+  const disabledPrev = currentSlide !== undefined && currentSlide === 0;
+  const disabledNext =
+    currentSlide !== undefined && currentSlide === slideCount;
 
   return (
-    <SliderButtonStyled className={className}>
+    <SliderButtonStyled className={className} size={size}>
       <SliderPrevStyled onClick={onClickPrev} disabled={disabledPrev}>
         <ArrowLeft />
       </SliderPrevStyled>
