@@ -9,7 +9,7 @@ import {
 } from "./Advantage.styled";
 
 const Advantage = ({ icon, title, description, theme, className }) => (
-  <AdvantageStyled theme="white" className={className}>
+  <AdvantageStyled theme={theme} className={className}>
     <Icon>{icon}</Icon>
     <Content>
       <Title>{title}</Title>

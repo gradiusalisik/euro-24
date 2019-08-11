@@ -3,14 +3,6 @@ import { colors } from "../../variables";
 import { ArrowLeft as Left } from "../Icons/ArrowLeft";
 import { ArrowRight as Right } from "../Icons/ArrowRight";
 
-export const SliderButtonStyled = styled.div`
-  position: absolute;
-  z-index: 10;
-  top: 50%;
-  right: 96px;
-  transform: translateY(-50%);
-`;
-
 const arrowStyle = css`
   width: 100%;
   height: 100%;
@@ -65,4 +57,29 @@ export const SliderPrevStyled = styled.button`
 
 export const SliderNextStyled = styled.button`
   ${buttonStyle};
+`;
+
+const sizeSliderButton = {
+  small: css`
+    ${SliderPrevStyled} {
+      margin-right: 8px;
+      width: 16px;
+      height: 16px;
+    }
+
+    ${SliderNextStyled} {
+      width: 16px;
+      height: 16px;
+    }
+  `
+};
+
+export const SliderButtonStyled = styled.div`
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  right: 96px;
+  transform: translateY(-50%);
+
+  ${props => sizeSliderButton[props.size]}
 `;

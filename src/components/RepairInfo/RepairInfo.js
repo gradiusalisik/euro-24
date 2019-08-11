@@ -16,6 +16,7 @@ const RepairInfo = ({ advantages }) => (
     <Advantages>
       {advantages.map(advantage => (
         <AdvantageStyled
+          theme="white"
           key={advantage.id}
           icon={advantage.icon}
           title={advantage.title}
