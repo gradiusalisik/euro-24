@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Cold = (props: any) => (
+export const Cold = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="32"

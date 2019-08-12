@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import CardDescription from "../CardDescription/CardDescription";
 import Advantage from "../Advantage/Advantage";
 
 export const WindowStyled = styled.div`
@@ -45,19 +44,6 @@ export const Buttons = styled.div`
 export const Information = styled.div`
   display: flex;
   width: 50%;
-`;
-
-export const Slides = styled.div`
-  overflow: hidden;
-  width: 300px;
-`;
-
-export const List = styled.div`
-  display: flex;
-`;
-
-export const CardDescriptionStyled = styled(CardDescription)`
-  flex: 0 0 auto;
 `;
 
 export const Colors = styled.div`

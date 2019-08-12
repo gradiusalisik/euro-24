@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Blocks = (props: any) => (
+export const Blocks = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="59"

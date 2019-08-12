@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 
 // data
-import { tabs } from "../../assets/dataJson/cupboard";
+import { tabs, cupboards } from "../../assets/dataJson/cupboard";
 
 import Title from "../Title/Title";
 import Tabs from "../Tabs/Tabs";
+import Slides from "../Slides/Slides";
 
-import { CupboardStyled, Content } from "./Cupboard.styled";
+import {
+  CupboardStyled,
+  Content,
+  ButtonStyled,
+  Photo
+} from "./Cupboard.styled";
 
 const Cupboard = () => {
   const [tabId, setTabId] = useState(tabs[0].id);
@@ -14,11 +20,22 @@ const Cupboard = () => {
   const handleClick = id => {
     setTabId(id);
   };
+
+  const count = cupboards.findIndex(({ id }) => id === tabId);
+
+  const background = cupboards[count].background;
+  const alt = cupboards[count].id;
+
   return (
     <CupboardStyled>
       <Title>Выбрать шкаф на балкон</Title>
       <Tabs id={tabId} onClick={handleClick} tabs={tabs} />
-      <Content>Hello</Content>
+      <Content>
+        <Slides slides={cupboards} count={count}>
+          <ButtonStyled>Заказать жалюзи</ButtonStyled>
+        </Slides>
+        <Photo src={background} alt={alt} />
+      </Content>
     </CupboardStyled>
   );
 };

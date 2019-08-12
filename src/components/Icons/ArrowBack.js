@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ArrowBack = (props: any) => (
+export const ArrowBack = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"

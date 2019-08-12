@@ -26,6 +26,7 @@ const CardDescription = ({
   currentSlide,
   onClickPrev,
   onClickNext,
+  isArrows,
   className
 }) => {
   const count = currentSlide !== undefined ? currentSlide : 0;
@@ -34,7 +35,7 @@ const CardDescription = ({
     <CardDescriptionStyled className={className} count={count}>
       <Head>
         <Title>{title}</Title>
-        {slideCount > 0 && (
+        {slideCount > 0 && isArrows && (
           <SliderButtonStyled
             size="small"
             slideCount={slideCount}
@@ -73,7 +74,8 @@ CardDescription.propTypes = {
   slideCount: pt.number,
   currentSlide: pt.number,
   onClickPrev: pt.func,
-  onClickNext: pt.func
+  onClickNext: pt.func,
+  isArrows: pt.bool
 };
 
 CardDescription.defaultProps = {
