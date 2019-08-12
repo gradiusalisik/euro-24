@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ArrowRight = (props: any) => (
+export const ArrowRight = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="34"

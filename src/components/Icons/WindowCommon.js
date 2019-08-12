@@ -1,6 +1,6 @@
 import React from "react";
 
-export const WindowCommon = (props: any) => (
+export const WindowCommon = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="56"

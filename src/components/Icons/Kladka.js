@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Kladka = (props: any) => (
+export const Kladka = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="59"

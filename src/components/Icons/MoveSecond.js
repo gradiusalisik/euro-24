@@ -1,6 +1,6 @@
 import React from "react";
 
-export const MoveSecond = (props: any) => (
+export const MoveSecond = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="56"

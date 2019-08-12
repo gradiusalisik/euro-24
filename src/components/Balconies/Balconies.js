@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // data
-import { tabs } from "../../assets/dataJson/balconies";
+import { tabs, balconies } from "../../assets/dataJson/balconies";
 
 import Title from "../Title/Title";
 import Tabs from "../Tabs/Tabs";
@@ -14,6 +14,7 @@ const Balconies = () => {
   const handleClick = id => {
     setTabId(id);
   };
+
   return (
     <BalconiesStyled>
       <Title>Подобрать балкон</Title>

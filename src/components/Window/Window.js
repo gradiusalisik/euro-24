@@ -7,6 +7,7 @@ import { setTag } from "../../utils/setTag";
 
 import Title from "../Title/Title";
 import Tags from "../Tags/Tags";
+import Slides from "../Slides/Slides";
 import Button from "../Button/Button";
 
 import {
@@ -16,9 +17,6 @@ import {
   Photo,
   ButtonColor,
   Information,
-  Slides,
-  List,
-  CardDescriptionStyled,
   Colors,
   Advantages,
   Buttons,
@@ -77,27 +75,18 @@ const Window = () => {
             <Photo background={background} />
             <ButtonColor>Хочу вызвать мастера</ButtonColor>
           </Visual>
-          <Slides>
-            <List>
-              {newSlides.map(slide => (
-                <CardDescriptionStyled
-                  key={slide.id}
-                  title={slide.title}
-                  description={slide.description}
-                  price={slide.price}
-                  tags={getSlideTags(slide.tags)}
-                  currentSlide={count}
-                  slideCount={newSlides.length - 1}
-                  onClickPrev={handleClickPrev}
-                  onClickNext={handleClickNext}
-                >
-                  <Buttons>
-                    <Button size="full">Заказать окна</Button>
-                    <Button size="full">Рассчитать стоимость</Button>
-                  </Buttons>
-                </CardDescriptionStyled>
-              ))}
-            </List>
+          <Slides
+            slides={newSlides}
+            count={count}
+            onClickPrev={handleClickPrev}
+            onClickNext={handleClickNext}
+            getSlideTags={getSlideTags}
+            isArrows
+          >
+            <Buttons>
+              <Button size="full">Заказать окна</Button>
+              <Button size="full">Рассчитать стоимость</Button>
+            </Buttons>
           </Slides>
         </Information>
 
