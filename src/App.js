@@ -15,6 +15,8 @@ import Nets from "./components/Nets/Nets";
 import Window from "./components/Window/Window";
 import Repair from "./components/Repair/Repair";
 
+import Radiobutton from "./components/Radiobutton/Radiobutton";
+
 import { AppStyled, HeaderScroll } from "./App.styled.js";
 
 const App = () => {
@@ -46,6 +48,7 @@ const App = () => {
 
       <HeaderScroll isScroll isShowHeader={isShowHeader} />
       <FirstScreen />
+      <Radiobutton />
       <Element name="window">
         <Window />
         <Jalousie />

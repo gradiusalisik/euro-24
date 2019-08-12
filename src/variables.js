@@ -24,5 +24,6 @@ export const colors = {
   brightblue: "#3985ec",
   vividBlue: "#116fff",
   vividBlueTwo: "#0165ff",
-  softBlue: "#b0cff8"
+  softBlue: "#b0cff8",
+  softBlueTwo: "#5695ed"
 };
