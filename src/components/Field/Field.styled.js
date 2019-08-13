@@ -36,7 +36,8 @@ export const Input = styled.input`
   }
   
   &:placeholder {
-    border-color: ${colors.gray};
+    color: ${colors.gray};
+    border-color: ${colors.whiteBlue};
   }
 `;
 
