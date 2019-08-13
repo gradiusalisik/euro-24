@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 // data
 import { tags, slides } from "../../assets/dataJson/window";
 
-import { setTag } from "../../utils/setTag";
+import { setTag, filteredTags, getSlides } from "../../utils/tags";
 
 import Title from "../Title/Title";
 import Tags from "../Tags/Tags";
@@ -17,7 +17,7 @@ import {
   Photo,
   ButtonColor,
   Information,
-  Colors,
+  // Colors,
   Advantages,
   Buttons,
   AdvantageStyled
@@ -40,11 +40,7 @@ const Window = () => {
   };
 
   useEffect(() => {
-    const newSlidesArr = slides.filter(({ tags }) =>
-      tags.some(tag => tagIds.includes(tag))
-    );
-
-    setNewSlides(newSlidesArr);
+    setNewSlides(getSlides(tagIds, slides));
   }, [tagIds]);
 
   useEffect(() => {
@@ -68,7 +64,11 @@ const Window = () => {
   return (
     <WindowStyled>
       <Title>Подобрать окна</Title>
-      <Tags onClick={handleClick} tagIds={tagIds} tags={tags} />
+      <Tags
+        onClick={handleClick}
+        tagIds={tagIds}
+        tags={filteredTags(tags, slides)}
+      />
       <Content>
         <Information>
           <Visual>

@@ -12,7 +12,7 @@ const Advantage = ({ icon, title, description, theme, className }) => (
   <AdvantageStyled theme={theme} className={className}>
     <Icon>{icon}</Icon>
     <Content>
-      <Title>{title}</Title>
+      {title && <Title>{title}</Title>}
       {description && <Description>{description}</Description>}
     </Content>
   </AdvantageStyled>

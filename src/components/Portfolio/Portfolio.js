@@ -1,8 +1,8 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 // data
 import { tags, slides } from "../../assets/dataJson/portfolio";
 
-import { setTag } from "../../utils/setTag";
+import { setTag, filteredTags, getSlides } from "../../utils/tags";
 
 import Title from "../Title/Title";
 import SliderPortfolio from "../SliderPortfolio/SliderPortfolio";
@@ -12,15 +12,19 @@ import { PortfolioStyled, TagsStyled, Top } from "./Portfolio.styled";
 
 const Portfolio = () => {
   const sliderEl = useRef(null);
+  const defaultSlides = slides.filter(slide => slide.tags.includes(tags[0].id));
 
   const [tagIds, setTagId] = useState([tags[0].id]);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [newSlides, setNewSlides] = useState(defaultSlides);
 
   const handleClick = id => {
     setTagId(setTag(tagIds, id));
   };
 
-  const newSlides = slides.filter(item => tagIds.includes(item.category));
+  useEffect(() => {
+    setNewSlides(getSlides(tagIds, slides));
+  }, [tagIds]);
 
   const handleClickPrev = () => {
     sliderEl.current.slickPrev();
@@ -33,7 +37,7 @@ const Portfolio = () => {
     setCurrentSlide(current);
   };
 
-  // TODO так как у нас row = 2 мы делим все слайды на 2 и отнимает первый двойной слайд и последний, они не учиытваются при слайдинге
+  // так как у нас row = 2 мы делим все слайды на 2 и отнимает первый двойной слайд и последний, они не учиытваются при слайдинге
   const slideCount = Math.floor((newSlides.length - 1) / 2) - 2;
 
   return (
@@ -49,7 +53,11 @@ const Portfolio = () => {
           />
         )}
       </Top>
-      <TagsStyled onClick={handleClick} tagIds={tagIds} tags={tags} />
+      <TagsStyled
+        onClick={handleClick}
+        tagIds={tagIds}
+        tags={filteredTags(tags, slides)}
+      />
       <SliderPortfolio
         slides={newSlides}
         ref={sliderEl}

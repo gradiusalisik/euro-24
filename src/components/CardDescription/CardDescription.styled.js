@@ -3,7 +3,7 @@ import { colors } from "../../variables";
 import SliderButton from "../SliderButton/SliderButton";
 
 export const CardDescriptionStyled = styled.div`
-  width: 300px;
+  width: 100%;
   opacity: 0;
   transform: translateX(0);
   transition: transform 0.7s ease-in, opacity 0.7s ease-in;
@@ -14,8 +14,9 @@ export const CardDescriptionStyled = styled.div`
 
   ${p =>
     p.count &&
+    p.maxWidth &&
     css`
-      transform: translateX(-${p.count * 300}px);
+      transform: translateX(-${p.count * p.maxWidth}px);
     `}
 `;
 
@@ -63,7 +64,7 @@ export const Tag = styled.div`
 `;
 
 export const Description = styled.p`
-  margin-top: 28px;
+  margin-top: 16px;
   margin-bottom: 24px;
   font-size: 14px;
   line-height: 1.43;

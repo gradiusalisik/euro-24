@@ -11,13 +11,15 @@ const Slides = ({
   onClickNext,
   getSlideTags,
   isArrows,
-  className
+  className,
+  maxWidth
 }) => (
-  <SlidesStyled className={className}>
+  <SlidesStyled className={className} maxWidth={maxWidth}>
     <List>
       {slides.map((slide, key) => (
         <CardDescriptionStyled
           key={slide.id}
+          maxWidth={maxWidth}
           title={slide.title}
           description={slide.description}
           price={slide.price}
@@ -48,13 +50,15 @@ Slides.propTypes = {
   count: pt.number,
   onClickPrev: pt.func,
   getSlideTags: pt.func,
-  onClickNext: pt.func
+  onClickNext: pt.func,
+  maxWidth: pt.number
 };
 
 Slides.defaultProps = {
   getSlideTags: () => {},
   onClickPrev: () => {},
-  onClickNext: () => {}
+  onClickNext: () => {},
+  maxWidth: 335
 };
 
 export default Slides;

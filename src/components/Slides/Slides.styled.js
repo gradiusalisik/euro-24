@@ -2,8 +2,9 @@ import styled from "styled-components";
 import CardDescription from "../CardDescription/CardDescription";
 
 export const SlidesStyled = styled.div`
+  flex: 0 0 auto;
   overflow: hidden;
-  width: 300px;
+  width: ${p => `${p.maxWidth}px`};
 `;
 
 export const List = styled.div`
