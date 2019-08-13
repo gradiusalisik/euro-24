@@ -10,7 +10,7 @@ export const reviews = [
     images: [
       {
         id: "1",
-        video: "https://www.youtube.com/embed/jyJR7kXNRa4"
+        image: ExampleImage
       },
       {
         id: "2",
@@ -27,7 +27,7 @@ export const reviews = [
     images: [
       {
         id: "1",
-        video: "https://www.youtube.com/embed/jyJR7kXNRa4"
+        image: ExampleImage
       },
       {
         id: "2",
@@ -48,7 +48,7 @@ export const reviews = [
     images: [
       {
         id: "1",
-        video: "https://www.youtube.com/embed/jyJR7kXNRa4"
+        image: ExampleImage
       },
       {
         id: "2",
@@ -73,7 +73,7 @@ export const reviews = [
     images: [
       {
         id: "1",
-        video: "https://www.youtube.com/embed/jyJR7kXNRa4"
+        image: ExampleImage
       },
       {
         id: "2",
@@ -102,7 +102,7 @@ export const reviews = [
     images: [
       {
         id: "1",
-        video: "https://www.youtube.com/embed/jyJR7kXNRa4"
+        image: ExampleImage
       }
     ]
   }
