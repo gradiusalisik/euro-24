@@ -1,6 +1,6 @@
 import React from "react";
 import { PropTypes as pt } from "prop-types";
-import { ButtonStyled } from "./Button.styled";
+import { ButtonStyled, Wrap } from "./Button.styled";
 
 const Button = ({
   children,
@@ -19,7 +19,7 @@ const Button = ({
     onClick={onClick}
     className={className}
   >
-    {children}
+    <Wrap>{children}</Wrap>
   </ButtonStyled>
 );
 
