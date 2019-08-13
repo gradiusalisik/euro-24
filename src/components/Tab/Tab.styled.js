@@ -17,23 +17,29 @@ export const TabStyled = styled(TagStyled)`
   border: 1px solid ${colors.gray};
   cursor: pointer;
   border-radius: 0;
-  transition: border 0.3s, color 0.3s, background-color 0.3s;
+  transition: border-color 0.3s, color 0.3s, background-color 0.3s;
 
   &:hover {
     color: ${colors.brightblue};
-    border: 1px solid ${colors.brightblue};
+    border-color: ${colors.brightblue};
+  }
+
+  &:hover + button {
+    border-left-color: ${colors.brightblue};
   }
 
   &:first-child {
     border-bottom-left-radius: 50px;
     border-top-left-radius: 50px;
-    border-right: 0;
   }
 
   &:last-child {
-    border-left: 0;
     border-bottom-right-radius: 50px;
     border-top-right-radius: 50px;
+  }
+
+  &:not(:last-child) {
+    border-right: 0;
   }
 
   ${props =>

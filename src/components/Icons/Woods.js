@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Woods = (props: any) => (
+export const Woods = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="56"
@@ -8,7 +8,7 @@ export const Woods = (props: any) => (
     viewBox="0 0 56 32"
     {...props}
   >
-    <g fill="none" fill-rule="nonzero">
+    <g fill="none" fillRule="nonzero">
       <path
         fill="#D7E9FF"
         d="M.473 28.093h12.234v3.455H.473zM12.707 28.093H.473l22.72-22.458h12.235z"

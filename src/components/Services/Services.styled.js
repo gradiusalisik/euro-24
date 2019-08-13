@@ -1,8 +1,10 @@
 import styled, { css } from "styled-components";
+import { colors } from "../../variables";
 import Tabs from "../Tabs/Tabs";
 import Button from "../Button/Button";
 import CardsServicesContent from "../CardsServicesContent/CardsServicesContent";
 import Title from "../Title/Title";
+import { ArrowBack } from "../Icons/ArrowBack";
 
 export const ServicesStyled = styled.div`
   margin-bottom: 100px;
@@ -19,8 +21,16 @@ export const TitleStyled = styled(Title)`
   margin-bottom: 0;
 `;
 
+export const ArrowBackStyled = styled(ArrowBack)`
+  width: 100%;
+  height: 100%;
+  color: ${colors.black};
+`;
+
 export const ButtonBack = styled.button`
   margin-right: 16px;
+  width: 24px;
+  height: 24px;
   font-size: 14px;
   border: none;
   background-color: transparent;

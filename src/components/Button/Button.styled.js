@@ -93,7 +93,15 @@ const buttonTheme = {
   `
 };
 
+const buttonSize = {
+  full: css`
+    width: 100%;
+  `
+};
+
 export const ButtonStyled = styled.button`
   ${ButtonBase};
   ${p => buttonTheme[p.theme]}
+
+  ${p => buttonSize[p.size]};
 `;

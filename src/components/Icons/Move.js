@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Move = (props: any) => (
+export const Move = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="46"
@@ -8,7 +8,7 @@ export const Move = (props: any) => (
     viewBox="0 0 46 56"
     {...props}
   >
-    <g fill="none" fill-rule="nonzero">
+    <g fill="none" fillRule="nonzero">
       <path
         fill="#D7E9FF"
         d="M45.529 51.115c0 1.448-1.187 2.622-2.65 2.622-1.465 0-2.651-1.174-2.651-2.622s1.186-7.865 2.65-7.865c1.465 0 2.65 6.417 2.65 7.865z"

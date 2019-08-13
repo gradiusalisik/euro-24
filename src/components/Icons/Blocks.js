@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Blocks = (props: any) => (
+export const Blocks = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="59"
@@ -8,7 +8,7 @@ export const Blocks = (props: any) => (
     viewBox="0 0 59 56"
     {...props}
   >
-    <g fill="none" fill-rule="nonzero">
+    <g fill="none" fillRule="nonzero">
       <path
         fill="#94C1FF"
         d="M18.835.494h18.337v18.337H18.835zM.496 18.831h18.339v18.337H.496z"

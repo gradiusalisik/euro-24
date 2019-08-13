@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Kladka = (props: any) => (
+export const Kladka = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="59"
@@ -8,7 +8,7 @@ export const Kladka = (props: any) => (
     viewBox="0 0 59 56"
     {...props}
   >
-    <g fill="none" fill-rule="nonzero">
+    <g fill="none" fillRule="nonzero">
       <path fill="#94C1FF" d="M14.309 22.462h33.146v3.667H14.309z" />
       <path
         fill="#F6BB42"
