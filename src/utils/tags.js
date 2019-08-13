@@ -11,3 +11,9 @@ export const setTag = (tagIds, id) => {
   }
   return newTagIds;
 };
+
+export const filteredTags = (tags, slides) =>
+  tags.filter(({ id }) => slides.some(({ tags }) => tags.includes(id)));
+
+export const getSlides = (tagIds, slides) =>
+  slides.filter(({ tags }) => tags.some(tag => tagIds.includes(tag)));
