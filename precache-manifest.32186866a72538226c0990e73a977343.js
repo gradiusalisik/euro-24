@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "44f088116211edab310c5bbda809e162",
+    "revision": "51bbfe5ecec50f12129bcbd09ccd3611",
     "url": "/euro-24/index.html"
   },
   {
-    "revision": "388d1a2fdc27d7a44c2f",
+    "revision": "0c5b259cc296c3aa7380",
     "url": "/euro-24/static/css/main.f0b32748.chunk.css"
   },
   {
-    "revision": "ff41bec0fcfaf0f8f5d0",
-    "url": "/euro-24/static/js/2.fb67e971.chunk.js"
+    "revision": "ed88461259cb133b3a7a",
+    "url": "/euro-24/static/js/2.9bbfbf86.chunk.js"
   },
   {
-    "revision": "388d1a2fdc27d7a44c2f",
-    "url": "/euro-24/static/js/main.3498e167.chunk.js"
+    "revision": "0c5b259cc296c3aa7380",
+    "url": "/euro-24/static/js/main.6ca92921.chunk.js"
   },
   {
     "revision": "b420175310490bfe0296",
