@@ -7,8 +7,7 @@ import ReviewIllustration from "../../assets/img/reviews/illustration-reviews.sv
 
 export const ReviewsStyled = styled.div`
   position: relative;
-  /* TODO временный костыль на высоту */
-  height: 540px;
+  margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
 `;
@@ -16,7 +15,7 @@ export const ReviewsStyled = styled.div`
 export const Info = styled.div`
   position: relative;
   padding-top: 70px;
-  margin-right: 80px;
+  margin-right: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -48,6 +47,7 @@ export const Title = styled.h2`
 
 export const SliderReviewsStyled = styled(SliderReviews)`
   width: calc(100% - 566px);
+  height: 540px;
 `;
 
 export const SliderButtonStyled = styled(SliderButton)`

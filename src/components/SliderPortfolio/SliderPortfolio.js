@@ -9,6 +9,9 @@ const SliderPortfolio = React.forwardRef(({ slides, changeSlider }, ref) => {
     infinite: false,
     arrows: false,
     rows: 2,
+    centerPadding: "60px",
+    speed: 500,
+    slidesPerRow: 1,
     beforeChange: (current, next) => changeSlider(next)
   };
 

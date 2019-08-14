@@ -10,50 +10,50 @@ export const CardReviewsStyled = styled.div`
 `;
 
 export const Images = styled.ul`
-  margin-left: -5px;
-  margin-top: -5px;
+  margin-left: -8px;
+  margin-top: -8px;
   display: flex;
   flex-wrap: wrap;
 `;
 
 const sizeImage = {
   two: css`
-    width: calc(50% - 5px);
+    width: calc(50% - 8px);
   `,
   three: css`
-    width: calc(50% - 5px);
-    height: 68px;
+    width: calc(50% - 8px);
+    height: 100px;
 
     &:first-child {
       width: 100%;
-      height: 138px;
+      height: 200px;
     }
   `,
   four: css`
-    height: 138px;
-    width: calc(50% - 5px);
+    height: 200px;
+    width: calc(50% - 8px);
 
     &:nth-last-child(2),
     &:last-child {
-      height: 68px;
+      height: 100px;
     }
   `,
   more: css`
-    width: calc(20% - 5px);
-    height: 68px;
+    width: calc(20% - 8px);
+    height: 100px;
 
     &:first-child {
       width: 100%;
-      height: 138px;
+      height: 200px;
     }
   `
 };
 
 export const Item = styled.li`
-  margin-left: 5px;
-  margin-top: 5px;
+  margin-left: 8px;
+  margin-top: 8px;
   width: 100%;
-  height: 210px;
+  height: 308px;
   ${p => sizeImage[p.size]};
 `;
 
