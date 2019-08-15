@@ -8,7 +8,7 @@ export const Color = props => (
     viewBox="0 0 12 14"
     {...props}
   >
-    <g fill="none" fill-rule="evenodd">
+    <g fill="none" fillRule="evenodd">
       <path d="M15-2H-3v18h18z" />
       <path
         fill="currentColor"

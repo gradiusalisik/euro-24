@@ -28,6 +28,7 @@ export const Content = styled.div`
 `;
 
 export const Visual = styled.div`
+  position: relative;
   margin-right: 40px;
 `;
 
@@ -40,7 +41,9 @@ export const Photo = styled.div`
 `;
 
 export const ButtonColor = styled.button`
-  position: relative;
+  position: absolute;
+  left: 16px;
+  bottom: 68px;
   display: flex;
   align-items: center;
   justify-content: center;
