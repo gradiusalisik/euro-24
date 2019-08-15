@@ -1,6 +1,5 @@
 import React from "react";
 import { PropTypes as pt } from "prop-types";
-import { numberWithSpaces } from "../../utils/numberWithSpaces";
 
 import {
   CardDescriptionStyled,
@@ -10,10 +9,8 @@ import {
   Tags,
   Tag,
   Description,
-  PriceWrap,
-  PriceText,
-  Price,
-  SliderButtonStyled
+  SliderButtonStyled,
+  PriceStyled
 } from "./CardDescription.styled";
 
 const CardDescription = ({
@@ -59,11 +56,7 @@ const CardDescription = ({
           </Tags>
         )}
         <Description dangerouslySetInnerHTML={{ __html: description }} />
-        <PriceWrap>
-          <PriceText>Цена от</PriceText>
-          <Price>{numberWithSpaces(price)}</Price>
-          <PriceText>руб/м2</PriceText>
-        </PriceWrap>
+        <PriceStyled price={price} />
         {children}
       </Content>
     </CardDescriptionStyled>

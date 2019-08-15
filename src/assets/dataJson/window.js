@@ -3,6 +3,18 @@ import { Cold } from "../../components/Icons/Cold";
 import ExampleImg from "../img/window/example.jpg";
 import BalconiesImg from "../img/window/balconies.jpg";
 import WindowImg from "../img/window/window.jpg";
+import Classic1 from "../img/radiobutton/classic/button/cs001.jpg";
+import Classic2 from "../img/radiobutton/classic/button/cs002.jpg";
+import Premier1 from "../img/radiobutton/premier/button/1.jpg";
+import Premier2 from "../img/radiobutton/premier/button/2.jpg";
+import Metallic1 from "../img/radiobutton/metallic/button/mt001.jpg";
+import Metallic2 from "../img/radiobutton/metallic/button/mt002.jpg";
+import ClassicBig1 from "../img/radiobutton/classic/frame/cs001.jpg";
+import ClassicBig2 from "../img/radiobutton/classic/frame/cs002.jpg";
+import PremierBig1 from "../img/radiobutton/premier/frame/1.jpg";
+import PremierBig2 from "../img/radiobutton/premier/frame/2.jpg";
+import MetallicBig1 from "../img/radiobutton/metallic/frame/mt001.jpg";
+import MetallicBig2 from "../img/radiobutton/metallic/frame/mt002.jpg";
 
 export const tags = [
   {
@@ -183,3 +195,63 @@ export const slides = [
     ]
   }
 ];
+
+export const colors = {
+  price: "5600",
+  list: [
+    {
+      category: "premier",
+      textCategory: "Premier ламинация",
+      colors: [
+        {
+          value: "Ирландский дуб",
+          name: "premier",
+          background: Premier1,
+          backgroundBig: PremierBig1
+        },
+        {
+          value: "Античный дуб",
+          name: "premier",
+          background: Premier2,
+          backgroundBig: PremierBig2
+        }
+      ]
+    },
+    {
+      category: "classic",
+      textCategory: "Classic ламинация",
+      colors: [
+        {
+          value: "Орегон 4",
+          name: "classic",
+          background: Classic1,
+          backgroundBig: ClassicBig1
+        },
+        {
+          value: "Темный дуб FL-F1",
+          name: "classic",
+          background: Classic2,
+          backgroundBig: ClassicBig2
+        }
+      ]
+    },
+    {
+      category: "metallic",
+      textCategory: "Metallic ламинация",
+      colors: [
+        {
+          value: "Серебряная платина",
+          name: "metallic",
+          background: Metallic1,
+          backgroundBig: MetallicBig1
+        },
+        {
+          value: "Драгоценная платина",
+          name: "metallic",
+          background: Metallic2,
+          backgroundBig: MetallicBig2
+        }
+      ]
+    }
+  ]
+};

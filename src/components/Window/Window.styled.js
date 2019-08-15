@@ -1,5 +1,19 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { colors } from "../../variables";
 import Advantage from "../Advantage/Advantage";
+import WindowColor from "../WindowColor/WindowColor";
+import { Color } from "../Icons/Color";
+
+const radialPulse = keyframes`
+  0% {
+    box-shadow: 0 0 0 0px rgba(143, 3, 253, 0.3),
+			0 0 0 0px rgba(143, 3, 253, 0.2);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(143, 3, 253, 0.3), 0 0 0 40px rgba(143, 3, 253, 0.2);
+  }
+`;
 
 export const WindowStyled = styled.div`
   margin-bottom: 100px;
@@ -14,6 +28,7 @@ export const Content = styled.div`
 `;
 
 export const Visual = styled.div`
+  position: relative;
   margin-right: 40px;
 `;
 
@@ -26,8 +41,24 @@ export const Photo = styled.div`
 `;
 
 export const ButtonColor = styled.button`
+  position: absolute;
+  left: 16px;
+  bottom: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: ${colors.purpleDark};
+  border-radius: 50%;
   border: none;
-  background-color: transparent;
+  animation: ${radialPulse} 1s infinite;
+`;
+
+export const ColorIcon = styled(Color)`
+  width: 18px;
+  height: 18px;
+  color: ${colors.white};
 `;
 
 export const Buttons = styled.div`
@@ -66,3 +97,5 @@ export const AdvantageStyled = styled(Advantage)`
     margin-bottom: 20px;
   }
 `;
+
+export const WindowColorStyled = styled(WindowColor)``;

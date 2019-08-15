@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { colors } from "../../variables";
 import SliderButton from "../SliderButton/SliderButton";
+import Price from "../Price/Price";
 
 export const CardDescriptionStyled = styled.div`
   width: 100%;
@@ -71,22 +72,6 @@ export const Description = styled.p`
   color: ${colors.main};
 `;
 
-export const PriceWrap = styled.div`
+export const PriceStyled = styled(Price)`
   margin-bottom: 24px;
-  display: flex;
-  align-items: flex-end;
-`;
-
-export const PriceText = styled.span`
-  padding-bottom: 4px;
-  font-size: 14px;
-  color: ${colors.main};
-`;
-
-export const Price = styled.span`
-  padding-right: 8px;
-  padding-left: 8px;
-  font-size: 32px;
-  font-weight: 500;
-  color: ${colors.orange};
 `;
