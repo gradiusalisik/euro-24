@@ -9,14 +9,45 @@ export const CardReviewsStyled = styled(CardReviews)`
 `;
 
 export const SliderReviewsStyled = styled(Slider)`
-  /* .slick-center { */
+  .slick-list,
+  .slick-track {
+    height: 100%;
+  }
+
+  .slick-slide[aria-hidden="true"] {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+
+  .slick-slide[aria-hidden="false"] {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .slick-track {
+    width: 100% !important;
+    transform: translate(0) !important;
+  }
+
+  .slick-slide {
+    position: absolute;
+    left: 0;
+    transform: scale(0.7) translateX(-126px);
+    width: 630px !important;
+    transition: transform 0.5s;
+    will-change: transform, left, right;
+    backface-visibility: hidden;
+  }
+
   .slick-current + .slick-slide {
-    position: relative;
     z-index: 1;
-    /* margin-left: -192px; */
-    transform: scale(1.3);
-    width: 630px;
-    transition: transform 0.3s ease;
+    height: 540px !important;
+    transform: scale(1) translateX(124px);
+
+    ${CardReviewsStyled} {
+      max-height: 100%;
+    }
 
     ${Content},
     ${CardReviewsStyled} {
@@ -27,8 +58,14 @@ export const SliderReviewsStyled = styled(Slider)`
     }
   }
 
-  .slick-list {
-    padding-top: 100px !important;
-    padding-bottom: 100px !important;
+  .slick-current + .slick-slide + .slick-slide[aria-hidden="false"] {
+    transform: scale(0.7) translateX(458px);
+
+    & + .slick-slide {
+      transform: scale(0.7) translateX(458px);
+      & + .slick-slide {
+        transform: scale(0.7) translateX(458px);
+      }
+    }
   }
 `;

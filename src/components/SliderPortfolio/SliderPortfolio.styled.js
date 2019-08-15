@@ -3,10 +3,6 @@ import Slider from "react-slick";
 
 export const SliderPortfolioStyled = styled(Slider)`
   margin-top: -24px;
-
-  /* .slick-track {
-    width: 100% !important;
-  } */
 `;
 
 export const Image = styled.img`

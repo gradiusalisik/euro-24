@@ -14,9 +14,8 @@ const Menu = ({ menu, theme }) => (
             spy={true}
             smooth={true}
             duration={500}
-            offset={-105}
             theme={theme}
-          >
+            offset={-185}
             {item.text}
           </Link>
         </Item>

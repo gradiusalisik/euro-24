@@ -1,15 +1,12 @@
 import React from "react";
-import { numberWithSpaces } from "../../utils/numberWithSpaces";
+import Price from "../Price/Price";
 
 import {
   CardServicesStyled,
   Icon,
   Info,
   Title,
-  Description,
-  PriceWrap,
-  Text,
-  Price
+  Description
 } from "./CardServices.styled";
 
 const CardServices = ({
@@ -32,12 +29,7 @@ const CardServices = ({
     <Info>
       <Title>{title}</Title>
       <Description>{description}</Description>
-
-      <PriceWrap>
-        <Text>от</Text>
-        <Price>{numberWithSpaces(price)}</Price>
-        <Text>руб/м2</Text>
-      </PriceWrap>
+      <Price price={price} />
     </Info>
   </CardServicesStyled>
 );

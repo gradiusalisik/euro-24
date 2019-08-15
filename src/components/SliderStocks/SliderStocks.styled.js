@@ -3,9 +3,14 @@ import Slider from "react-slick";
 import CardStock from "../CardStocks/CardStocks";
 
 export const SliderStocksStyled = styled(Slider)`
-  .slick-center {
-    transform: scale(1.3);
+  .slick-slide {
+    transform: scale(0.9);
+    /* max-width: 464px; */
     transition: transform 0.3s ease;
+  }
+
+  .slick-center {
+    transform: scale(1);
   }
 
   .slick-list {

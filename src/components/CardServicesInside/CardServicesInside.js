@@ -1,13 +1,10 @@
 import React from "react";
-import { numberWithSpaces } from "../../utils/numberWithSpaces";
+import Price from "../Price/Price";
 
 import {
   CardServicesInsideStyled,
   Title,
-  Description,
-  PriceWrap,
-  Text,
-  Price
+  Description
 } from "./CardServicesInside.styled";
 
 const CardServicesInside = ({ title, description, price, className }) => (
@@ -15,11 +12,7 @@ const CardServicesInside = ({ title, description, price, className }) => (
     <Title>{title}</Title>
     <Description>{description}</Description>
 
-    <PriceWrap>
-      <Text>от</Text>
-      <Price>{numberWithSpaces(price)}</Price>
-      <Text>руб/м2</Text>
-    </PriceWrap>
+    <Price price={price} />
   </CardServicesInsideStyled>
 );
 
