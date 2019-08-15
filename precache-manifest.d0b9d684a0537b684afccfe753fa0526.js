@@ -1,23 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "51bbfe5ecec50f12129bcbd09ccd3611",
+    "revision": "21ec65eaa5a64d9073770a01ba844a99",
     "url": "/euro-24/index.html"
   },
   {
-    "revision": "0c5b259cc296c3aa7380",
+    "revision": "fa3d0b1edcf4de701fac",
     "url": "/euro-24/static/css/main.f0b32748.chunk.css"
   },
   {
-    "revision": "ed88461259cb133b3a7a",
-    "url": "/euro-24/static/js/2.9bbfbf86.chunk.js"
+    "revision": "c983bb10762062139cfe",
+    "url": "/euro-24/static/js/2.67b417d9.chunk.js"
   },
   {
-    "revision": "0c5b259cc296c3aa7380",
-    "url": "/euro-24/static/js/main.6ca92921.chunk.js"
+    "revision": "fa3d0b1edcf4de701fac",
+    "url": "/euro-24/static/js/main.e95c8488.chunk.js"
   },
   {
     "revision": "b420175310490bfe0296",
     "url": "/euro-24/static/js/runtime~main.af0c163b.js"
+  },
+  {
+    "revision": "24044592e7646ce3bc0969c450186451",
+    "url": "/euro-24/static/media/1.24044592.jpg"
+  },
+  {
+    "revision": "dfc981c0f6bc520a68fe3cec803fcb16",
+    "url": "/euro-24/static/media/2.dfc981c0.jpg"
   },
   {
     "revision": "a19aeb6e31b27572bf70d7fd481afcfd",
@@ -26,6 +34,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "eb8f6bf0cf6a630f0fd06e860a231d07",
     "url": "/euro-24/static/media/blocks.eb8f6bf0.jpg"
+  },
+  {
+    "revision": "d986031740cfb9e78dd08df4d818d6a8",
+    "url": "/euro-24/static/media/cs001.d9860317.jpg"
+  },
+  {
+    "revision": "71fa5944df92b16727c6e26e50c82782",
+    "url": "/euro-24/static/media/cs002.71fa5944.jpg"
   },
   {
     "revision": "eb75820c5c6d1fed880c3fb27d3c400a",
@@ -118,6 +134,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ec162909116ee991fcea3f926609f462",
     "url": "/euro-24/static/media/move.ec162909.jpg"
+  },
+  {
+    "revision": "32326e178654162ea763799053d9f790",
+    "url": "/euro-24/static/media/mt001.32326e17.jpg"
+  },
+  {
+    "revision": "10968ea4b403f1ddbdec578292efcdca",
+    "url": "/euro-24/static/media/mt002.10968ea4.jpg"
   },
   {
     "revision": "0fc7377a8a8fedc834c75d3632c40567",
