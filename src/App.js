@@ -14,6 +14,7 @@ import Services from "./components/Services/Services";
 import Nets from "./components/Nets/Nets";
 import Window from "./components/Window/Window";
 import Repair from "./components/Repair/Repair";
+import Footer from "./components/Footer/Footer";
 
 import { AppStyled, HeaderScroll } from "./App.styled.js";
 
@@ -70,6 +71,7 @@ const App = () => {
       <Element name="reviews">
         <Reviews />
       </Element>
+      <Footer />
     </AppStyled>
   );
 };

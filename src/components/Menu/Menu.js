@@ -3,7 +3,7 @@ import { PropTypes as pt } from "prop-types";
 
 import { MenuStyled, List, Item, Link } from "./Menu.styled";
 
-const Menu = ({ menu }) => (
+const Menu = ({ menu, theme }) => (
   <MenuStyled>
     <List>
       {menu.map(item => (
@@ -15,6 +15,7 @@ const Menu = ({ menu }) => (
             smooth={true}
             duration={500}
             offset={-105}
+            theme={theme}
           >
             {item.text}
           </Link>

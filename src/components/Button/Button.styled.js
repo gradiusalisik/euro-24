@@ -95,7 +95,7 @@ const buttonSize = {
 
 export const ButtonStyled = styled.button`
   ${ButtonBase};
-  ${p => buttonTheme[p.theme]}
+  ${p => buttonTheme[p.theme]};
 
   ${p => buttonSize[p.size]};
 `;
