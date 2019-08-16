@@ -8,7 +8,7 @@ const Menu = ({ menu, theme }) => (
     <List>
       {menu.map(item => (
         <Item key={item.id}>
-          <Link>
+          <Link
             activeClass="active"
             to={item.id}
             spy={true}
@@ -16,6 +16,7 @@ const Menu = ({ menu, theme }) => (
             duration={500}
             theme={theme}
             offset={-185}
+            >
             {item.text}
           </Link>
         </Item>
