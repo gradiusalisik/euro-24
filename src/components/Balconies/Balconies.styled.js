@@ -11,7 +11,7 @@ export const BalconiesStyled = styled.div`
 export const Content = styled.div`
   padding-top: 48px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 `;
 
 export const ButtonStyled = styled(Button)`

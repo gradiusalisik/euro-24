@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
-
+import { Provider } from "mobx-react";
 import { Element } from "react-scroll";
+
+import { store } from "./store/store";
 
 import Header from "./components/Header/Header";
 import FirstScreen from "./components/FirstScreen/FirstScreen";
@@ -14,6 +16,7 @@ import Services from "./components/Services/Services";
 import Nets from "./components/Nets/Nets";
 import Window from "./components/Window/Window";
 import Repair from "./components/Repair/Repair";
+import ModalSuccess from "./components/ModalSuccess/ModalSuccess";
 
 import { AppStyled, HeaderScroll } from "./App.styled.js";
 
@@ -39,7 +42,7 @@ const App = () => {
   };
 
   return (
-    <AppStyled>
+    <Provider {...store}>
       <div ref={headerEl}>
         <Header />
       </div>
@@ -70,7 +73,8 @@ const App = () => {
       <Element name="reviews">
         <Reviews />
       </Element>
-    </AppStyled>
+      <ModalSuccess />
+    </Provider>
   );
 };
 
