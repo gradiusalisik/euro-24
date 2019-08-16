@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "../../variables";
 
 export const SocialIconsStyled = styled.div`
   display: flex;
@@ -11,7 +12,7 @@ export const SocialIconsLink = styled.a`
   transition: color 0.3s;
 
   &:hover {
-    color: rgba(255, 255, 255, 1);
+    color: ${colors.white}
   }
   
   &:not(:last-child) {

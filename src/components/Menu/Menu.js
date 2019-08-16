@@ -8,7 +8,7 @@ const Menu = ({ menu, theme }) => (
     <List>
       {menu.map(item => (
         <Item key={item.id}>
-          <Link
+          <Link>
             activeClass="active"
             to={item.id}
             spy={true}
