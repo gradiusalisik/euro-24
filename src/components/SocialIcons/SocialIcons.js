@@ -7,13 +7,13 @@ import { SocialIconsStyled, SocialIconsLink} from "./SocialIcons.styled";
 
 const SocialIcons = () => (
   <SocialIconsStyled>
-    <SocialIconsLink href="#">
+    <SocialIconsLink href="#" rel="noopener nofollow">
       <Facebook />
     </SocialIconsLink>
-    <SocialIconsLink href="#">
+    <SocialIconsLink href="#" rel="noopener nofollow">
       <Twitter />
     </SocialIconsLink>
-    <SocialIconsLink href="#">
+    <SocialIconsLink href="#" rel="noopener nofollow">
       <Instagram />
     </SocialIconsLink>
   </SocialIconsStyled>

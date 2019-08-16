@@ -3,17 +3,14 @@ import { colors } from "../../variables";
 import { LogoFooter } from "../Icons/LogoFooter";
 
 export const FooterStyled = styled.footer`
-  display: flex;
-  flex-direction: column;
   background-color: ${colors.dark};
 `;
 
 export const Wrap = styled.div`
-  padding: 28px 56px;
+  padding: 38px 56px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 140px;
 `;
 
 export const Left = styled.div`
@@ -22,14 +19,14 @@ export const Left = styled.div`
 `;
 
 export const Right = styled.div`
-  display: block;
 `;
 
 export const CopyrightStyled = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 95px;
+  padding-top: 41px;
+  padding-bottom: 41px;
   border-top: 1px solid rgba(126, 143, 164, 0.5);
 `;
 
