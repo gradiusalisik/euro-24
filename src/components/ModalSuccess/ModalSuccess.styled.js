@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { colors } from "../../variables";
 import Button from "../Button/Button";
+import { Operator } from "../Icons/Operator";
 
 export const ModalSuccessStyled = styled.div`
   padding-top: 38px;
@@ -11,9 +12,10 @@ export const ModalSuccessStyled = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  background-color: ${colors.white};
 `;
 
-export const Image = styled.img`
+export const OperatorImage = styled(Operator)`
   width: 105px;
   height: 112px;
 `;

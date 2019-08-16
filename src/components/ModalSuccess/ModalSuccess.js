@@ -1,33 +1,33 @@
-import React, { useStores } from "react";
-import { observer } from "mobx-react";
+import React from "react";
+import { inject } from "mobx-react";
 import Modal from "../Modal/Modal";
-import { Operator as OperatorIcon } from "../Icons/Operator";
 
 import {
   ModalSuccessStyled,
-  Image,
+  OperatorImage,
   Title,
   Description,
   ButtonBack
 } from "./ModalSuccess.styled";
 
-const ModalSuccess = observer(() => {
-  const { modalStore } = useStores();
-
+const ModalSuccess = ({ closeModalSuccess, isShowModalSuccess }) => {
   const handleClose = () => {
-    modalStore.openModalSuccess();
+    closeModalSuccess();
   };
 
   return (
-    <Modal isShow onClose={handleClose}>
+    <Modal isShow={isShowModalSuccess} onClose={handleClose}>
       <ModalSuccessStyled>
-        <Image src={OperatorIcon} />
+        <OperatorImage />
         <Title>Успех!</Title>
         <Description>Наш мастер уже набирает вас</Description>
-        <ButtonBack>Вернуться на главную</ButtonBack>
+        <ButtonBack onClick={handleClose}>Вернуться на главную</ButtonBack>
       </ModalSuccessStyled>
     </Modal>
   );
-});
+};
 
-export default ModalSuccess;
+export default inject(({ modalStore }) => ({
+  closeModalSuccess: modalStore.closeModalSuccess,
+  isShowModalSuccess: modalStore.isShowModalSuccess
+}))(ModalSuccess);

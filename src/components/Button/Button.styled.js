@@ -7,7 +7,7 @@ export const Wrap = styled.div`
   width: 100%;
 `;
 
-const ButtonBase = css`
+export const ButtonBase = css`
   padding-left: 24px;
   padding-right: 24px;
   height: 40px;
@@ -21,7 +21,7 @@ const ButtonBase = css`
   }
 `;
 
-const buttonTheme = {
+export const buttonTheme = {
   primary: css`
     color: ${colors.white};
     background-color: ${colors.brightblue};

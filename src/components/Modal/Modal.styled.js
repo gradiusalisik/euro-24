@@ -16,8 +16,8 @@ export const ModalStyled = styled.div`
   visibility: hidden;
   font-size: 0;
   opacity: 0;
-  transition: z-index 0.3s, visibility 0.3s, opacity 0.3s;
-  will-change: z-index, visibility, opacity;
+  transition: visibility 0.3s, opacity 0.3s;
+  will-change: visibility, opacity;
 
   ${p =>
     p.isShow &&
@@ -32,6 +32,9 @@ export const CloseButton = styled.button`
   position: absolute;
   top: 24px;
   right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 32px;
   height: 32px;
   border: none;
@@ -39,8 +42,9 @@ export const CloseButton = styled.button`
 `;
 
 export const CloseIcon = styled(Close)`
-  width: 100%;
-  height: 100%;
+  width: 20px;
+  height: 20px;
+  color: ${colors.whiteBlue};
 `;
 
 export const Overlay = styled.div`

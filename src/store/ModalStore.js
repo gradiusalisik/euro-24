@@ -5,15 +5,14 @@ class ModalStore {
   isShowModalSuccess = false;
 
   @action
-  openModalSuccess() {
-    console.log("work");
-    this.isShowModalSuccess = false;
-  }
+  openModalSuccess = () => {
+    this.isShowModalSuccess = true;
+  };
 
   @action
-  closeModalSuccess() {
+  closeModalSuccess = () => {
     this.isShowModalSuccess = false;
-  }
+  };
 }
 
 const modalStore = new ModalStore();

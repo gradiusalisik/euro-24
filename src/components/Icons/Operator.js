@@ -8,7 +8,7 @@ export const Operator = props => (
     viewBox="0 0 105 112"
     {...props}
   >
-    <g fill="none" fill-rule="nonzero">
+    <g fill="none" fillRule="nonzero">
       <path
         fill="#5C9EFF"
         d="M18.38 40.253h15.747v45.92H18.38zM86.62 36.91l-15.748-7.13v56.392H86.62z"

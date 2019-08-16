@@ -22,6 +22,7 @@ const Modal = React.memo(({ isShow, onClose, children }) => {
       modalTarget.current.remove();
       window.removeEventListener("keyup", onKeyUp);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {

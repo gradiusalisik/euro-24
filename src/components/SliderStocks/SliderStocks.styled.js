@@ -10,19 +10,36 @@ export const SliderStocksStyled = styled(Slider)`
   }
 
   .slick-center {
+    position: relative;
+    z-index: 1;
     transform: scale(1);
   }
 
   .slick-list {
-    padding-top: 80px !important;
-    padding-bottom: 80px !important;
+    height: 600px;
+    overflow: hidden;
+  }
+
+
+  .slick-slide[aria-hidden=true] {
+    transform: translateX(90px) scale(0.9);
+  }
+
+  .slick-slide[aria-hidden=false] {
+    transform: translateX(100px) scale(0.9);
+    & +.slick-slide[aria-hidden=false] {
+      transform: translateX(15px) scale(1);
+
+      & +.slick-slide[aria-hidden=false] {
+          transform: translateX(-75px) scale(0.9);
+        & + .slick-slide {
+          transform: translateX(-70px) scale(0.9);
+        }
+    }
   }
 `;
 
-export const CardStocksStyled = styled(CardStock)`
-  padding-left: 20px;
-  padding-right: 20px;
-`;
+export const CardStocksStyled = styled(CardStock)``;
 
 export const List = styled.div`
   display: flex;

@@ -18,7 +18,7 @@ import Window from "./components/Window/Window";
 import Repair from "./components/Repair/Repair";
 import ModalSuccess from "./components/ModalSuccess/ModalSuccess";
 
-import { AppStyled, HeaderScroll } from "./App.styled.js";
+import { HeaderScroll } from "./App.styled.js";
 
 const App = () => {
   const [isShowHeader, setShowHeader] = useState(false);

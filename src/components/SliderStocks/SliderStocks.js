@@ -6,7 +6,7 @@ import {
   List
 } from "./SliderStocks.styled";
 
-const SliderStocks = React.forwardRef(({ slides }, ref) => {
+const SliderStocks = React.forwardRef(({ slides, attrSlide }, ref) => {
   const settings = {
     centerMode: true,
     slidesToShow: 3,

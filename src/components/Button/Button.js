@@ -26,11 +26,14 @@ const Button = ({
 Button.propTypes = {
   theme: pt.oneOf(["primary", "secondary", "tetriary"]),
   type: pt.string,
-  onClick: pt.func
+  onClick: pt.func,
+  disabled: pt.bool,
+  size: pt.string
 };
 
 Button.defaultProps = {
   theme: "primary",
+  disabled: false,
   type: "button"
 };
 
