@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 // data
-import { tags, slides } from "../../assets/dataJson/nets";
+import { tags, slides, sheets } from "../../assets/dataJson/nets";
 
 import { setTag, filteredTags, getSlides } from "../../utils/tags";
 
@@ -9,6 +9,7 @@ import Title from "../Title/Title";
 import Tags from "../Tags/Tags";
 import Button from "../Button/Button";
 import Slides from "../Slides/Slides";
+import ChooseSheet from "../ChooseSheet/ChooseSheet";
 
 import {
   NetsStyled,
@@ -28,6 +29,7 @@ const Nets = () => {
   const [background, setBackground] = useState(newSlides[0].background);
   const [advantages, setAdvantages] = useState(newSlides[0].advantages);
   const [count, setCount] = useState(0);
+  const [isOpenChooseSheet, setOpenChooseSheet] = useState(false);
 
   const handleClick = id => {
     setTagId(setTag(tagIds, id));
@@ -53,6 +55,14 @@ const Nets = () => {
     setCount(count + 1);
   };
 
+  const handleOpenChooseSheet = () => {
+    setOpenChooseSheet(true);
+  };
+
+  const handleCloseChooseSheet = () => {
+    setOpenChooseSheet(false);
+  };
+
   const getSlideTags = slideTags =>
     slideTags
       .map(slideTag => tags.filter(tag => slideTag === tag.id)[0])
@@ -69,22 +79,33 @@ const Nets = () => {
       <Content>
         <Information>
           <Photo background={background} />
-          <Slides
-            slides={newSlides}
-            count={count}
-            onClickPrev={handleClickPrev}
-            onClickNext={handleClickNext}
-            getSlideTags={getSlideTags}
-            isArrows
-          >
-            <Buttons>
-              <Button size="full">Заказать сетку</Button>
-              <Button size="full" theme="secondary">
-                Выбрать полотно
-              </Button>
-            </Buttons>
-          </Slides>
-          {/* <NetsType /> */}
+          {isOpenChooseSheet ? (
+            <ChooseSheet
+              sheets={sheets.list}
+              onClickBack={handleCloseChooseSheet}
+              price={sheets.price}
+            />
+          ) : (
+            <Slides
+              slides={newSlides}
+              count={count}
+              onClickPrev={handleClickPrev}
+              onClickNext={handleClickNext}
+              getSlideTags={getSlideTags}
+              isArrows
+            >
+              <Buttons>
+                <Button size="full">Заказать сетку</Button>
+                <Button
+                  size="full"
+                  theme="secondary"
+                  onClick={handleOpenChooseSheet}
+                >
+                  Выбрать полотно
+                </Button>
+              </Buttons>
+            </Slides>
+          )}
         </Information>
 
         <Advantages>
