@@ -98,6 +98,7 @@ export const Item = styled.div`
 
   &:nth-child(${p => p.count + 1}) {
     opacity: 1;
+    z-index: 1;
     transform: translateX(0);
   }
 
