@@ -1,4 +1,5 @@
 import React from "react";
+import { inject } from "mobx-react";
 import Button from "../Button/Button";
 
 // data
@@ -12,6 +13,7 @@ import {
   Buttons,
   Image,
   Container,
+  ButtonLink,
   Brands,
   Item,
   Brand
@@ -19,27 +21,45 @@ import {
 
 const { title, description, image, brands } = firstScreen;
 
-const FirstScreen = () => (
-  <FirstScreenStyled>
-    <Container>
-      <Info>
-        <Title dangerouslySetInnerHTML={{ __html: title }} />
-        <Description>{description}</Description>
-        <Buttons>
-          <Button>Подобрать для себя</Button>
-          <Button theme="secondary">Задать вопрос</Button>
-        </Buttons>
-      </Info>
-      <Image src={image} alt="repairs" />
-    </Container>
-    <Brands>
-      {brands.map(brand => (
-        <Item key={brand.id}>
-          <Brand src={brand.brand} alt={brand.id} />
-        </Item>
-      ))}
-    </Brands>
-  </FirstScreenStyled>
-);
+const FirstScreen = ({ openModalSuccess }) => {
+  const handleClickQuestion = () => {
+    openModalSuccess();
+  };
 
-export default FirstScreen;
+  return (
+    <FirstScreenStyled>
+      <Container>
+        <Info>
+          <Title dangerouslySetInnerHTML={{ __html: title }} />
+          <Description>{description}</Description>
+          <Buttons>
+            <ButtonLink
+              to="window"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-185}
+            >
+              Подобрать для себя
+            </ButtonLink>
+            <Button theme="secondary" onClick={handleClickQuestion}>
+              Задать вопрос
+            </Button>
+          </Buttons>
+        </Info>
+        <Image src={image} alt="repairs" />
+      </Container>
+      <Brands>
+        {brands.map(brand => (
+          <Item key={brand.id}>
+            <Brand src={brand.brand} alt={brand.id} />
+          </Item>
+        ))}
+      </Brands>
+    </FirstScreenStyled>
+  );
+};
+
+export default inject(({ modalStore }) => ({
+  openModalSuccess: modalStore.openModalSuccess
+}))(FirstScreen);

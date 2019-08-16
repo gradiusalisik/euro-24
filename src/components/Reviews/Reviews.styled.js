@@ -9,13 +9,13 @@ export const ReviewsStyled = styled.div`
   position: relative;
   margin-bottom: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 `;
 
 export const Info = styled.div`
   position: relative;
   padding-top: 70px;
-  margin-right: 20px;
+  margin-right: 80px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -46,7 +46,7 @@ export const Title = styled.h2`
 `;
 
 export const SliderReviewsStyled = styled(SliderReviews)`
-  width: calc(100% - 566px);
+  width: 860px;
   height: 540px;
 `;
 

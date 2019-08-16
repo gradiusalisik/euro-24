@@ -1,5 +1,7 @@
 import styled, { css } from "styled-components";
 import { colors } from "../../variables";
+import { Link as LinkScroll } from "react-scroll";
+import { ButtonBase, buttonTheme } from "../Button/Button.styled";
 
 export const FirstScreenStyled = styled.div`
   padding-top: 90px;
@@ -48,9 +50,18 @@ export const Buttons = styled.div`
   display: flex;
   align-items: center;
 
-  & > * {
+  & > *:not(:last-child) {
     margin-right: 24px;
   }
+`;
+
+export const ButtonLink = styled(LinkScroll)`
+  ${ButtonBase};
+  ${buttonTheme.primary};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 `;
 
 export const Image = styled.img`
