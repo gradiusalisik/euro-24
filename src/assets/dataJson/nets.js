@@ -1,6 +1,12 @@
 import React from "react";
 import ExampleImg from "../img/nets/example.jpg";
 import { Cold } from "../../components/Icons/Cold";
+import ImageStandart from "../img/nets/sheets/standart.jpg";
+import ImageAntiCats from "../img/nets/sheets/anti-cats.jpg";
+import ImageAntiDust from "../img/nets/sheets/anti-dust.jpg";
+import ImageView from "../img/nets/sheets/view.jpg";
+import ImageAntiPollen from "../img/nets/sheets/anti-pollen.jpg";
+import ImageAluminium from "../img/nets/sheets/aluminum.jpg";
 
 export const tags = [
   {
@@ -182,3 +188,39 @@ export const slides = [
     ]
   }
 ];
+
+export const sheets = {
+  price: "1000",
+  list: [
+    {
+      value: "standart",
+      title: "Стандарт",
+      image: ImageStandart
+    },
+    {
+      value: "anti-cats",
+      title: "Антикошка",
+      image: ImageAntiCats
+    },
+    {
+      value: "anti-dust",
+      title: "Антипыль",
+      image: ImageAntiDust
+    },
+    {
+      value: "view",
+      title: "Обзор",
+      image: ImageView
+    },
+    {
+      value: "anti-pollen",
+      title: "Антипыльца",
+      image: ImageAntiPollen
+    },
+    {
+      value: "aluminum",
+      title: "Алюминиевое",
+      image: ImageAluminium
+    }
+  ]
+};
