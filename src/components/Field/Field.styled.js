@@ -1,24 +1,28 @@
-import styled, {css} from 'styled-components';
+import styled, { css } from "styled-components";
 import { colors, font } from "../../variables";
 
 export const FieldStyled = styled.div`
   display: block;
 
-  ${props => props.filled && css`
-    ${Input} {
-      border-color: ${colors.main};
-    }
-  `};
+  ${props =>
+    props.filled &&
+    css`
+      ${Input} {
+        border-color: ${colors.main};
+      }
+    `};
 
-  ${props => props.error && css`
-    ${Input} {
-      border-color: ${colors.softRed};
-    }
-    ${Error} {
-      opacity: 1;
-      visibility: visible;
-    }
-  `};
+  ${props =>
+    props.error &&
+    css`
+      ${Input} {
+        border-color: ${colors.softRed};
+      }
+      ${Error} {
+        opacity: 1;
+        visibility: visible;
+      }
+    `};
 `;
 
 export const Input = styled.input`
@@ -29,12 +33,13 @@ export const Input = styled.input`
   color: ${colors.main};
   border-radius: 2px;
   border: 1px solid ${colors.whiteBlue};
+  background-color: ${colors.white};
   transition: border-color 0.3s;
 
   &:focus {
     border-color: ${colors.vividBlueTwo};
   }
-  
+
   &:placeholder {
     color: ${colors.gray};
     border-color: ${colors.whiteBlue};
