@@ -7,6 +7,7 @@ import "./font.css";
 import "./optimize.css";
 import "./index.css";
 import "./slider.css";
+import "react-image-lightbox/style.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 

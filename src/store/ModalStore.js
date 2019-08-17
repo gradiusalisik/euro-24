@@ -22,7 +22,6 @@ class ModalStore {
 
   @action
   openModalDiscount = () => {
-    console.log("open");
     this.isShowModalDiscount = true;
     if (!this.hideCodeDiscount) {
       this.hideCodeDiscount = true;

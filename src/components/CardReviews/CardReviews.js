@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { PropTypes as pt } from "prop-types";
+import LightboxSlide from "../LightboxSlide/LightboxSlide";
 
 import {
   CardReviewsStyled,
@@ -14,7 +15,17 @@ import {
   Video
 } from "./CardReviews.styled";
 
-const CardReviews = ({ images, description, name, date, className }) => {
+const CardReviews = ({
+  images,
+  description,
+  name,
+  date,
+  className,
+  openSlide
+}) => {
+  const [isOpenSlides, setOpenSlides] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   const getSize = quantity => {
     if (quantity === 2) {
       return "two";
@@ -34,11 +45,28 @@ const CardReviews = ({ images, description, name, date, className }) => {
     return;
   };
 
+  const handleOpenSlides = id => () => {
+    const currentIndexSlide = images.map(item => item.id).indexOf(id);
+
+    setCurrentIndex(currentIndexSlide);
+    setOpenSlides(true);
+  };
+
+  const handleCloseSlides = () => {
+    setOpenSlides(false);
+  };
+
+  const imagesReview = images.map(item => item.image);
+
   return (
     <CardReviewsStyled className={className}>
       <Images>
         {images.map(item => (
-          <Item key={item.id} size={getSize(images.length)}>
+          <Item
+            key={item.id}
+            size={getSize(images.length)}
+            onClick={handleOpenSlides(item.id)}
+          >
             {item.video ? (
               <Video
                 allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
@@ -55,6 +83,13 @@ const CardReviews = ({ images, description, name, date, className }) => {
             )}
           </Item>
         ))}
+        {isOpenSlides && (
+          <LightboxSlide
+            onClose={handleCloseSlides}
+            images={imagesReview}
+            currentIndexSlide={currentIndex}
+          />
+        )}
       </Images>
       <Content>
         <Description>{description}</Description>
