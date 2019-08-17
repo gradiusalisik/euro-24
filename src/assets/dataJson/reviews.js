@@ -9,11 +9,11 @@ export const reviews = [
     date: "24.09.2019",
     images: [
       {
-        id: "1",
+        id: "ex1",
         image: ExampleImage
       },
       {
-        id: "2",
+        id: "ex2",
         image: ExampleImage
       }
     ]
@@ -26,15 +26,15 @@ export const reviews = [
     date: "24.09.2019",
     images: [
       {
-        id: "1",
+        id: "exa1",
         image: ExampleImage
       },
       {
-        id: "2",
+        id: "exa2",
         image: ExampleImage
       },
       {
-        id: "3",
+        id: "exa3",
         image: ExampleImage
       }
     ]
@@ -47,19 +47,19 @@ export const reviews = [
     date: "24.09.2019",
     images: [
       {
-        id: "1",
+        id: "e1",
         image: ExampleImage
       },
       {
-        id: "2",
+        id: "e2",
         image: ExampleImage
       },
       {
-        id: "3",
+        id: "e3",
         image: ExampleImage
       },
       {
-        id: "4",
+        id: "e4",
         image: ExampleImage
       }
     ]
@@ -72,23 +72,23 @@ export const reviews = [
     date: "24.09.2019",
     images: [
       {
-        id: "1",
+        id: "exam1",
         image: ExampleImage
       },
       {
-        id: "2",
+        id: "exam2",
         image: ExampleImage
       },
       {
-        id: "3",
+        id: "exam3",
         image: ExampleImage
       },
       {
-        id: "4",
+        id: "exam4",
         image: ExampleImage
       },
       {
-        id: "5",
+        id: "exam5",
         image: ExampleImage
       }
     ]
@@ -101,7 +101,7 @@ export const reviews = [
     date: "24.09.2019",
     images: [
       {
-        id: "1",
+        id: "one1",
         image: ExampleImage
       }
     ]
