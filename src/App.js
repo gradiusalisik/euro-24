@@ -18,6 +18,7 @@ import Window from "./components/Window/Window";
 import Repair from "./components/Repair/Repair";
 import ModalSuccess from "./components/ModalSuccess/ModalSuccess";
 import FixedButton from "./components/FixedButton/FixedButton";
+import Promo from "./components/Promo/Promo";
 
 import { HeaderScroll } from "./App.styled.js";
 
@@ -52,6 +53,7 @@ const App = () => {
       <FirstScreen />
       <Element name="window">
         <Window />
+        <Promo />
         <Jalousie />
         <Nets />
       </Element>

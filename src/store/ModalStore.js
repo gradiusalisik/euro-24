@@ -4,6 +4,12 @@ class ModalStore {
   @observable
   isShowModalSuccess = false;
 
+  @observable
+  isShowModalDiscount = false;
+
+  @observable
+  hideCodeDiscount = false;
+
   @action
   openModalSuccess = () => {
     this.isShowModalSuccess = true;
@@ -12,6 +18,20 @@ class ModalStore {
   @action
   closeModalSuccess = () => {
     this.isShowModalSuccess = false;
+  };
+
+  @action
+  openModalDiscount = () => {
+    console.log("open");
+    this.isShowModalDiscount = true;
+    if (!this.hideCodeDiscount) {
+      this.hideCodeDiscount = true;
+    }
+  };
+
+  @action
+  closeModalDiscount = () => {
+    this.isShowModalDiscount = false;
   };
 }
 
