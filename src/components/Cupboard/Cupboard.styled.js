@@ -15,6 +15,11 @@ export const Content = styled.div`
   justify-content: space-between;
 `;
 
+export const Wrap = styled.div`
+  position: relative;
+  z-index: 1;
+`;
+
 export const ButtonStyled = styled(Button)`
   width: 210px;
 `;

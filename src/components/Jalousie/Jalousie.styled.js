@@ -3,6 +3,8 @@ import Button from "../Button/Button";
 
 export const JalousieStyled = styled.div`
   margin-bottom: 100px;
+  position: relative;
+  z-index: 1;
 `;
 
 export const Content = styled.div`
