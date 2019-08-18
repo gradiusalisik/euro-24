@@ -12,7 +12,7 @@ const SocialIcons = () => (
         href={icon.href}
         rel="noopener nofollow"
         >
-        {icon.test}
+        {icon.icon}
       </SocialIconsLink>
     ))}
   </SocialIconsStyled>
