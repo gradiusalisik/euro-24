@@ -3,15 +3,23 @@ import { PropTypes as pt } from "prop-types";
 
 import { FieldStyled, Input, Error } from "./Field.styled";
 
-const Field = ({ error, name, onChange, type, placeholder, filled }) => (
-  <FieldStyled error={error} filled={filled}>
+const Field = ({
+  error,
+  name,
+  onChange,
+  type,
+  placeholder,
+  filled,
+  className
+}) => (
+  <FieldStyled error={error} filled={filled} className={className}>
     <Input
       onChange={onChange}
       placeholder={placeholder}
       type={type}
       name={name}
     />
-    <Error>Пожалуйста, введите правильные данные</Error>
+    {error && <Error>Пожалуйста, введите правильные данные</Error>}
   </FieldStyled>
 );
 

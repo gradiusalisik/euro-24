@@ -1,14 +1,13 @@
 import styled, { css } from "styled-components";
 import { colors, font } from "../../variables";
 
-export const FieldStyled = styled.div`
+export const TextareaStyled = styled.div`
   position: relative;
-  width: 100%;
 
   ${props =>
     props.filled &&
     css`
-      ${Input} {
+      ${Field} {
         border-color: ${colors.main};
       }
     `};
@@ -16,7 +15,7 @@ export const FieldStyled = styled.div`
   ${props =>
     props.error &&
     css`
-      ${Input} {
+      ${Field} {
         border-color: ${colors.softRed};
       }
       ${Error} {
@@ -26,10 +25,11 @@ export const FieldStyled = styled.div`
     `};
 `;
 
-export const Input = styled.input`
+export const Field = styled.textarea`
+  padding-top: 16px;
   padding-left: 12px;
   width: 100%;
-  height: 40px;
+  height: 115px;
   font-size: 16px;
   color: ${colors.main};
   border-radius: 2px;
@@ -51,11 +51,19 @@ export const Error = styled.span`
   position: absolute;
   top: calc(100% + 8px);
   left: 0;
-  opacity: 0;
-  visibility: hidden;
-  display: block;
   font-family: ${font.openSans};
   font-size: 12px;
   color: ${colors.softRed};
+  opacity: 0;
+  visibility: hidden;
   transition: opacity 0.3s;
+`;
+
+export const Description = styled.p`
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  font-size: 12px;
+  line-height: 1;
+  color: ${colors.gray};
 `;

@@ -16,7 +16,6 @@ export const SliderStocksStyled = styled(Slider)`
   }
 
   .slick-list {
-    height: 600px;
     overflow: hidden;
   }
 

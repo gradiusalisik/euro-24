@@ -1,10 +1,15 @@
 import React from "react";
 import { useForm } from "../../utils/customHooks";
 
-import Field from "../Field/Field";
 import Button from "../Button/Button";
 
-import { Form, Title, Description, Fields } from "./MainForm.styled";
+import {
+  Form,
+  Title,
+  Description,
+  Fields,
+  FieldStyled
+} from "./MainForm.styled";
 
 const MainForm = () => {
   const formInfo = () => {
@@ -23,15 +28,15 @@ const MainForm = () => {
         Наши специалисты свяжутся с вами в течении 15 минут.
       </Description>
       <Fields>
-        <Field
+        <FieldStyled
           name="name"
           type="text"
           value={inputs.name}
           placeholder="Как к вам обращаться?"
-          // error={}
+          error
           onChange={handleInputChange}
         />
-        <Field
+        <FieldStyled
           name="phone"
           type="text"
           value={inputs.phone}

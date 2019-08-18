@@ -5,6 +5,9 @@ class ModalStore {
   isShowModalSuccess = false;
 
   @observable
+  isShowModalReview = false;
+
+  @observable
   isShowModalDiscount = false;
 
   @observable
@@ -18,6 +21,16 @@ class ModalStore {
   @action
   closeModalSuccess = () => {
     this.isShowModalSuccess = false;
+  };
+
+  @action
+  openModalReview = () => {
+    this.isShowModalReview = true;
+  };
+
+  @action
+  closeModalReview = () => {
+    this.isShowModalReview = false;
   };
 
   @action
