@@ -1,19 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f6cdac785c36d1601792973f0b041087",
+    "revision": "b8129c0874e3019cd806598ba0878f0c",
     "url": "/euro-24/index.html"
   },
   {
-    "revision": "6964ff7e40587d745300",
+    "revision": "438345285c5ee9d7affe",
+    "url": "/euro-24/static/css/2.9522b9fe.chunk.css"
+  },
+  {
+    "revision": "a0a895099dd2df0cbd81",
     "url": "/euro-24/static/css/main.f35157fb.chunk.css"
   },
   {
-    "revision": "c603a5ffb0f01e29179e",
-    "url": "/euro-24/static/js/2.3ab81779.chunk.js"
+    "revision": "438345285c5ee9d7affe",
+    "url": "/euro-24/static/js/2.2d9a1adf.chunk.js"
   },
   {
-    "revision": "6964ff7e40587d745300",
-    "url": "/euro-24/static/js/main.de844b97.chunk.js"
+    "revision": "a0a895099dd2df0cbd81",
+    "url": "/euro-24/static/js/main.c20c56e6.chunk.js"
   },
   {
     "revision": "b420175310490bfe0296",
@@ -44,8 +48,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/euro-24/static/media/anti-pollen.4131d6a2.jpg"
   },
   {
+    "revision": "0cdff35bf3b8922d4da2e1e644406dbf",
+    "url": "/euro-24/static/media/background-modal.0cdff35b.png"
+  },
+  {
     "revision": "a19aeb6e31b27572bf70d7fd481afcfd",
     "url": "/euro-24/static/media/balconies.a19aeb6e.jpg"
+  },
+  {
+    "revision": "d24aa00dfae443f4f177085ebc4b414a",
+    "url": "/euro-24/static/media/bg-greeting.d24aa00d.svg"
+  },
+  {
+    "revision": "b7c0379172592d18e99ac41a2479d721",
+    "url": "/euro-24/static/media/bg-header.b7c03791.svg"
+  },
+  {
+    "revision": "d2867ee8542d5cfd3ce2816d55ec6e76",
+    "url": "/euro-24/static/media/bg-options.d2867ee8.svg"
+  },
+  {
+    "revision": "cb9cae18416ab07dce751d5862699878",
+    "url": "/euro-24/static/media/bg-promo.cb9cae18.svg"
+  },
+  {
+    "revision": "563675215777b6d1cc944cc0700f9f41",
+    "url": "/euro-24/static/media/bg-shells.56367521.svg"
   },
   {
     "revision": "eb8f6bf0cf6a630f0fd06e860a231d07",
@@ -114,6 +142,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d762d4d15906ba696a760005b235b0e0",
     "url": "/euro-24/static/media/illustration-reviews.d762d4d1.svg"
+  },
+  {
+    "revision": "53faeb5c91a0941061afcbafbb1786ac",
+    "url": "/euro-24/static/media/illustration-size.53faeb5c.svg"
   },
   {
     "revision": "95e3c60090fa8621220469fd6fa0775e",
