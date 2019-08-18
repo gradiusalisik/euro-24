@@ -2,11 +2,12 @@ import React from "react";
 
 import {
   SliderStocksStyled,
+  CardStocksItems,
   CardStocksStyled,
   List
 } from "./SliderStocks.styled";
 
-const SliderStocks = React.forwardRef(({ slides }, ref) => {
+const SliderStocks = React.forwardRef(({ slides, attrSlide }, ref) => {
   const settings = {
     centerMode: true,
     slidesToShow: 3,
@@ -29,7 +30,7 @@ const SliderStocks = React.forwardRef(({ slides }, ref) => {
       ) : (
         <List>
           {slides.map(stock => (
-            <CardStocksStyled
+            <CardStocksItems
               key={stock.id}
               image={stock.image}
               title={stock.title}

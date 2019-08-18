@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
-
+import { Provider } from "mobx-react";
 import { Element } from "react-scroll";
+
+import { store } from "./store/store";
 
 import Header from "./components/Header/Header";
 import FirstScreen from "./components/FirstScreen/FirstScreen";
@@ -14,10 +16,15 @@ import Services from "./components/Services/Services";
 import Nets from "./components/Nets/Nets";
 import Window from "./components/Window/Window";
 import Repair from "./components/Repair/Repair";
+<<<<<<< HEAD
 import Footer from "./components/Footer/Footer";
+=======
+import ModalSuccess from "./components/ModalSuccess/ModalSuccess";
+>>>>>>> origin/master
 import FixedButton from "./components/FixedButton/FixedButton";
+import Promo from "./components/Promo/Promo";
 
-import { AppStyled, HeaderScroll } from "./App.styled.js";
+import { HeaderScroll } from "./App.styled.js";
 
 const App = () => {
   const [isShowHeader, setShowHeader] = useState(false);
@@ -41,7 +48,7 @@ const App = () => {
   };
 
   return (
-    <AppStyled>
+    <Provider {...store}>
       <div ref={headerEl}>
         <Header />
       </div>
@@ -50,6 +57,7 @@ const App = () => {
       <FirstScreen />
       <Element name="window">
         <Window />
+        <Promo />
         <Jalousie />
         <Nets />
       </Element>
@@ -73,8 +81,9 @@ const App = () => {
         <Reviews />
       </Element>
       <Footer />
+      <ModalSuccess />
       <FixedButton />
-    </AppStyled>
+    </Provider>
   );
 };
 
