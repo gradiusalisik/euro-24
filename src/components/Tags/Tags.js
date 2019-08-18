@@ -11,17 +11,15 @@ const Tags = ({ onClick, tags, tagIds, className }) => {
   return (
     <TagsStyled className={className}>
       <List>
-        {tags.map(tag => {
-          return (
-            <TagStyled
-              key={tag.id}
-              onClick={handleClick(tag.id)}
-              isActive={tagIds.includes(tag.id)}
-            >
-              {tag.text}
-            </TagStyled>
-          );
-        })}
+        {tags.map(tag => (
+          <TagStyled
+            key={tag.id}
+            onClick={handleClick(tag.id)}
+            isActive={tagIds.includes(tag.id)}
+          >
+            {tag.text}
+          </TagStyled>
+        ))}
       </List>
     </TagsStyled>
   );

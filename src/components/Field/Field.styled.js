@@ -2,7 +2,8 @@ import styled, { css } from "styled-components";
 import { colors, font } from "../../variables";
 
 export const FieldStyled = styled.div`
-  display: block;
+  position: relative;
+  width: 100%;
 
   ${props =>
     props.filled &&
@@ -47,9 +48,11 @@ export const Input = styled.input`
 `;
 
 export const Error = styled.span`
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
   opacity: 0;
   visibility: hidden;
-  padding-top: 8px;
   display: block;
   font-family: ${font.openSans};
   font-size: 12px;

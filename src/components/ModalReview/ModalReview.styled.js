@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { colors } from "../../variables";
 import { Letter } from "../Icons/Letter";
 import Button from "../Button/Button";
+import Textarea from "../Textarea/Textarea";
+import Field from "../Field/Field";
 
 export const ModalReviewStyled = styled.div`
   padding-top: 32px;
@@ -32,10 +34,13 @@ export const Title = styled.h2`
   color: ${colors.main};
 `;
 
-export const Form = styled.form`
-  & > *:not(:last-child) {
-    margin-bottom: 6px;
-  }
+export const Form = styled.form``;
+
+export const TextareaStyled = styled(Textarea)`
+  margin-bottom: 40px;
+`;
+export const FieldStyled = styled(Field)`
+  margin-bottom: 24px;
 `;
 
 export const ButtonSubmit = styled(Button)`

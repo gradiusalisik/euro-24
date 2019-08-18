@@ -3,11 +3,21 @@ import { PropTypes as pt } from "prop-types";
 
 import { TextareaStyled, Field, Error, Description } from "./Textarea.styled";
 
-const Textarea = ({ error, name, onChange, placeholder, filled }) => (
-  <TextareaStyled error={error} filled={filled}>
+const Textarea = ({
+  error,
+  name,
+  onChange,
+  placeholder,
+  filled,
+  className
+}) => (
+  <TextareaStyled error={error} filled={filled} className={className}>
     <Field onChange={onChange} placeholder={placeholder} name={name} />
-    <Description>Не более 400 символов</Description>
-    <Error>Пожалуйста, введите правильные данные</Error>
+    {error ? (
+      <Error>Пожалуйста, введите правильные данные</Error>
+    ) : (
+      <Description>Не более 400 символов</Description>
+    )}
   </TextareaStyled>
 );
 

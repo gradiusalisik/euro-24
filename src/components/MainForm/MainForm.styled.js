@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { colors } from "../../variables";
+import Field from "../Field/Field";
 
 export const Form = styled.form`
   width: 560px;
@@ -23,5 +24,14 @@ export const Description = styled.p`
 `;
 
 export const Fields = styled.div`
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const FieldStyled = styled(Field)`
+  &:last-child {
+    margin-left: 16px;
+  }
 `;

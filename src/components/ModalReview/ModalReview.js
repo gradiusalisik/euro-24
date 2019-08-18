@@ -3,8 +3,6 @@ import { inject } from "mobx-react";
 import { useForm } from "../../utils/customHooks";
 
 import Modal from "../Modal/Modal";
-import Field from "../Field/Field";
-import Textarea from "../Textarea/Textarea";
 
 import {
   ModalReviewStyled,
@@ -12,6 +10,8 @@ import {
   Title,
   Header,
   Form,
+  TextareaStyled,
+  FieldStyled,
   ButtonSubmit
 } from "./ModalReview.styled";
 
@@ -36,20 +36,20 @@ const ModalReview = ({ closeModalReview, isShowModalReview }) => {
           <Title>Оставить отзыв</Title>
         </Header>
         <Form onSubmit={handleSubmit}>
-          <Field
+          <FieldStyled
             name="name"
             type="text"
             value={inputs.name}
             placeholder="Как к вам обращаться?"
-            // error={}
+            error
             onChange={handleInputChange}
           />
-          <Textarea
+          <TextareaStyled
             name="reviews"
             value={inputs.reviews}
             placeholder="Ваш отзыв"
           />
-          <Field
+          <FieldStyled
             name="video"
             type="text"
             value={inputs.video}

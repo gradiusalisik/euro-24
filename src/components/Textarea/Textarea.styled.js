@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { colors, font } from "../../variables";
 
 export const TextareaStyled = styled.div`
-  display: block;
+  position: relative;
 
   ${props =>
     props.filled &&
@@ -48,7 +48,9 @@ export const Field = styled.textarea`
 `;
 
 export const Error = styled.span`
-  margin-top: 8px;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
   font-family: ${font.openSans};
   font-size: 12px;
   color: ${colors.softRed};
@@ -58,7 +60,9 @@ export const Error = styled.span`
 `;
 
 export const Description = styled.p`
-  margin-top: 8px;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
   font-size: 12px;
   line-height: 1;
   color: ${colors.gray};
