@@ -7,16 +7,16 @@ export const socialIcons = [
     {
         id: "1",
         href: "#",
-        test: <Facebook />
+        icon: <Facebook />
     },
     {
         id: "2",
         href: "#",
-        test: <Twitter />
+        icon: <Twitter />
     },
     {
         id: "3",
         href: "#",
-        test: <Instagram />
+        icon: <Instagram />
     },
 ];
