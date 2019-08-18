@@ -16,11 +16,8 @@ import Services from "./components/Services/Services";
 import Nets from "./components/Nets/Nets";
 import Window from "./components/Window/Window";
 import Repair from "./components/Repair/Repair";
-<<<<<<< HEAD
 import Footer from "./components/Footer/Footer";
-=======
 import ModalSuccess from "./components/ModalSuccess/ModalSuccess";
->>>>>>> origin/master
 import FixedButton from "./components/FixedButton/FixedButton";
 import Promo from "./components/Promo/Promo";
 
