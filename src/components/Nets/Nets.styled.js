@@ -3,6 +3,8 @@ import Advantage from "../Advantage/Advantage";
 
 export const NetsStyled = styled.div`
   margin-bottom: 100px;
+  position: relative;
+  z-index: 1;
 `;
 
 export const Content = styled.div`
