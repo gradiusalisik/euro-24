@@ -13,6 +13,8 @@ export const ModalSuccessStyled = styled.div`
   align-items: center;
   justify-content: space-between;
   background-color: ${colors.white};
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 `;
 
 export const OperatorImage = styled(Operator)`

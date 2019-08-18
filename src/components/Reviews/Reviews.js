@@ -1,5 +1,8 @@
 import React, { useRef } from "react";
+import { inject } from "mobx-react";
+
 import Button from "../Button/Button";
+import ModalReview from "../ModalReview/ModalReview";
 
 import {
   ReviewsStyled,
@@ -10,7 +13,7 @@ import {
   SliderReviewsStyled
 } from "./Reviews.styled";
 
-const Reviews = () => {
+const Reviews = ({ openModalReview }) => {
   const sliderEl = useRef(null);
 
   const handleClickPrev = () => {
@@ -18,6 +21,10 @@ const Reviews = () => {
   };
   const handleClickNext = () => {
     sliderEl.current.slickNext();
+  };
+
+  const handleOpenReview = () => {
+    openModalReview();
   };
 
   return (
@@ -31,12 +38,15 @@ const Reviews = () => {
           <Title>
             Мы трудимся <br /> для вас.
           </Title>
-          <Button>Оставить отзыв</Button>
+          <Button onClick={handleOpenReview}>Оставить отзыв</Button>
         </Wrap>
       </Info>
       <SliderReviewsStyled ref={sliderEl} />
+      <ModalReview />
     </ReviewsStyled>
   );
 };
 
-export default Reviews;
+export default inject(({ modalStore }) => ({
+  openModalReview: modalStore.openModalReview
+}))(Reviews);

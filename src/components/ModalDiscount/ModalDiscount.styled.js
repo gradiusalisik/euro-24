@@ -8,7 +8,6 @@ export const ModalDiscountStyled = styled.div`
   position: relative;
   width: 650px;
   height: 436px;
-  /* background-color: ${colors.white}; */
 `;
 
 export const Content = styled.div`
