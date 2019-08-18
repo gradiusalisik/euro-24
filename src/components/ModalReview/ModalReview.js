@@ -3,6 +3,7 @@ import { inject } from "mobx-react";
 import { useForm } from "../../utils/customHooks";
 
 import Modal from "../Modal/Modal";
+import FieldFiles from "../FieldFiles/FieldFiles";
 
 import {
   ModalReviewStyled,
@@ -22,6 +23,7 @@ const ModalReview = ({ closeModalReview, isShowModalReview }) => {
 
   const formInfo = () => {
     console.log(
+      inputs,
       `User Created!, Name: ${inputs.name}, Phone: ${inputs.reviews}`
     );
   };
@@ -55,6 +57,7 @@ const ModalReview = ({ closeModalReview, isShowModalReview }) => {
             value={inputs.video}
             placeholder="Ссылка на видео-отзыв (необязательно)"
           />
+          <FieldFiles />
           <ButtonSubmit type="submit" size="full">
             Оставить отзыв
           </ButtonSubmit>
