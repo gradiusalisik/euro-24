@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import { colors, font } from "../../variables";
 
 import { Link as LinkScroll } from "react-scroll";
@@ -17,6 +17,24 @@ export const Item = styled.li`
     margin-right: 24px;
   }
 `;
+
+const LinkTheme = {
+  footer: css`
+    font-size: 12px;
+    color: rgba(255,255,255, 0.7);
+
+    &:hover {
+      color: ${colors.white};
+    }
+
+    &.active {
+      color: ${colors.white};
+      &::before {
+        background-color: ${colors.white};
+      }
+    }
+  `
+};
 
 export const Link = styled(LinkScroll)`
   position: relative;
@@ -47,4 +65,6 @@ export const Link = styled(LinkScroll)`
       background-color: ${colors.purpleDark};
     }
   }
+  ${p => LinkTheme[p.theme]};
 `;
+
