@@ -16,6 +16,7 @@ import Services from "./components/Services/Services";
 import Nets from "./components/Nets/Nets";
 import Window from "./components/Window/Window";
 import Repair from "./components/Repair/Repair";
+import Feedback from "./components/Feedback/Feedback";
 import Footer from "./components/Footer/Footer";
 import ModalSuccess from "./components/ModalSuccess/ModalSuccess";
 import FixedButton from "./components/FixedButton/FixedButton";
@@ -77,6 +78,7 @@ const App = () => {
       <Element name="reviews">
         <Reviews />
       </Element>
+      <Feedback />
       <Footer />
       <ModalSuccess />
       <FixedButton />

@@ -40,7 +40,7 @@ const MainForm = () => {
           name="phone"
           type="text"
           value={inputs.phone}
-          placeholder="Вам номер"
+          placeholder="Ваш номер"
           // error={}
           onChange={handleInputChange}
         />
