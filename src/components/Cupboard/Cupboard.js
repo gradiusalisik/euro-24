@@ -11,10 +11,11 @@ import {
   CupboardStyled,
   Content,
   ButtonStyled,
-  Photo
+  Photo,
+  Wrap
 } from "./Cupboard.styled";
 
-const Cupboard = () => {
+const Cupboard = ({ className }) => {
   const [tabId, setTabId] = useState(tabs[0].id);
 
   const handleClick = id => {
@@ -27,15 +28,17 @@ const Cupboard = () => {
   const alt = cupboards[count].id;
 
   return (
-    <CupboardStyled>
-      <Title>Выбрать шкаф на балкон</Title>
-      <Tabs id={tabId} onClick={handleClick} tabs={tabs} />
-      <Content>
-        <Slides slides={cupboards} count={count}>
-          <ButtonStyled>Заказать жалюзи</ButtonStyled>
-        </Slides>
-        <Photo src={background} alt={alt} />
-      </Content>
+    <CupboardStyled className={className}>
+      <Wrap>
+        <Title>Выбрать шкаф на балкон</Title>
+        <Tabs id={tabId} onClick={handleClick} tabs={tabs} />
+        <Content>
+          <Slides slides={cupboards} count={count}>
+            <ButtonStyled>Заказать жалюзи</ButtonStyled>
+          </Slides>
+          <Photo src={background} alt={alt} />
+        </Content>
+      </Wrap>
     </CupboardStyled>
   );
 };
