@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b8129c0874e3019cd806598ba0878f0c",
+    "revision": "1e475ff60971aebcc109a09c9cc33bcf",
     "url": "/euro-24/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/euro-24/static/css/2.9522b9fe.chunk.css"
   },
   {
-    "revision": "a0a895099dd2df0cbd81",
+    "revision": "9d375020c223e5fe9550",
     "url": "/euro-24/static/css/main.f35157fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/euro-24/static/js/2.2d9a1adf.chunk.js"
   },
   {
-    "revision": "a0a895099dd2df0cbd81",
-    "url": "/euro-24/static/js/main.c20c56e6.chunk.js"
+    "revision": "9d375020c223e5fe9550",
+    "url": "/euro-24/static/js/main.1bdc012e.chunk.js"
   },
   {
     "revision": "b420175310490bfe0296",
