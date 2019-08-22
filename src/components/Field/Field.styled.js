@@ -24,6 +24,7 @@ export const FieldStyled = styled.div`
         visibility: visible;
       }
     `};
+  ${p => size[p.size]};
 `;
 
 export const Input = styled.input`
@@ -59,3 +60,13 @@ export const Error = styled.span`
   color: ${colors.softRed};
   transition: opacity 0.3s;
 `;
+
+const size = {
+  full: css`
+    ${Input} {
+      width: 100%;
+      height: 100%;
+      border: solid 1px ${colors.whiteBlue};
+      border-top: none;
+    }
+`};
