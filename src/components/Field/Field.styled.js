@@ -24,6 +24,17 @@ export const FieldStyled = styled.div`
         visibility: visible;
       }
     `};
+
+  ${props =>
+    props.size &&
+    css`
+      ${Input} {
+        width: 266px;
+        height: 60px;
+        border: solid 1px ${colors.whiteBlue};
+        border-top: none;
+      }
+    `};
 `;
 
 export const Input = styled.input`

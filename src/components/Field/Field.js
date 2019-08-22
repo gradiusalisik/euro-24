@@ -10,14 +10,16 @@ const Field = ({
   type,
   placeholder,
   filled,
-  className
+  className,
+  size
 }) => (
-  <FieldStyled error={error} filled={filled} className={className}>
+  <FieldStyled error={error} filled={filled} size={size} className={className}>
     <Input
       onChange={onChange}
       placeholder={placeholder}
       type={type}
       name={name}
+      size
     />
     {error && <Error>Пожалуйста, введите правильные данные</Error>}
   </FieldStyled>
@@ -29,7 +31,8 @@ Field.propTypes = {
   type: pt.string,
   placeholder: pt.string,
   filled: pt.bool,
-  onChange: pt.func
+  onChange: pt.func,
+  sizeBig: pt.bool,
 };
 
 Field.defaultProps = {

@@ -48,13 +48,6 @@ export const FieldStyled = styled(Field)`
     margin-left: 24px;
     margin-right: 24px;
   }
-
-  input {
-    width: 266px;
-    height: 60px;
-    border: solid 1px ${colors.whiteBlue};
-    border-top: none;
-  }
 `;
 
 export const ButtonStyled = styled(Button)`
