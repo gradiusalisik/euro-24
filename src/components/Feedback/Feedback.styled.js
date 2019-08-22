@@ -44,6 +44,9 @@ export const Fields = styled.div`
 `;
 
 export const FieldStyled = styled(Field)`
+  width: 266px;
+  height: 60px;
+
   &:last-child {
     margin-left: 24px;
     margin-right: 24px;

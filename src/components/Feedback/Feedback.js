@@ -25,13 +25,13 @@ const Feedback = () => (
           type="text"
           placeholder="Как к вам обращаться?"
           error
-          size
+          size="full"
         />
         <FieldStyled
           name="phone"
           type="tel"
           placeholder="Ваш номер"
-          size
+          size="full"
         />
       </Fields>
       <ButtonStyled theme="tetriary">

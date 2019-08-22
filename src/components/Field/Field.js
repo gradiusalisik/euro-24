@@ -19,7 +19,7 @@ const Field = ({
       placeholder={placeholder}
       type={type}
       name={name}
-      size
+      size={size}
     />
     {error && <Error>Пожалуйста, введите правильные данные</Error>}
   </FieldStyled>
@@ -32,7 +32,7 @@ Field.propTypes = {
   placeholder: pt.string,
   filled: pt.bool,
   onChange: pt.func,
-  sizeBig: pt.bool,
+  size: pt.string,
 };
 
 Field.defaultProps = {
